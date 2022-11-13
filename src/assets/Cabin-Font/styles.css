@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Cabin;
+  src: url(./Cabin-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-Bold;
+  src: url(./Cabin-Bold.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-SemiBold;
+  src: url(./Cabin-SemiBold.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-SemiBoldItalic;
+  src: url(./Cabin-SemiBoldItalic.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-Light;
+  src: url(./Cabin-Light.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(./Cabin-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-Thin;
+  src: url(./Cabin-Thin.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cabin-Italic;
+  src: url(./Cabin-Italic.ttf);
+  font-weight: normal;
+}

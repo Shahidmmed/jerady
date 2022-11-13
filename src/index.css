@@ -1,0 +1,44 @@
+@import url(./assets/Cabin-Font/styles.css);
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87) !important;
+  background-color: #040404;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Cabin;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.main-container {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header-text {
+  font-family: Cabin-Bold !important;
+  color: #ffff;
+}
+
+.jerday-btn {
+  background: white !important;
+  border-radius: 10px !important;
+}

@@ -1,0 +1,89 @@
+.top-nav {
+  background-color: #040404;
+  box-shadow: 0 10px 10px -12px rgb(214 210 210 / 16%);
+  font-family: Cabin;
+  .nav-section {
+    background-color: #040404;
+    padding: 6px;
+    a {
+      color: var(--textShade300) !important;
+      position: relative;
+      font-weight: bold;
+    }
+    .logo {
+      padding: 0;
+      img {
+        height: 38px;
+      }
+    }
+    .menu-btn {
+      font-family: Cabin;
+      color: #ffff !important;
+    }
+    .menu-btn:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    .menu-btn.active {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    .menu-btn:hover {
+      transition: transform 0.25s ease-out;
+      transform: scale(1.2);
+    }
+    .menu-btn:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    .toggle-mobile-nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .primary-nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    padding: min(15vh, 10rem) 2em !important;
+    backdrop-filter: blur(2rem) !important;
+    flex-direction: column;
+    transform: translateX(100%) !important;
+    transition: transform 350ms ease-out;
+  }
+  .primary-nav[data-visible="true"] {
+    transform: translateX(0%) !important;
+  }
+  .toggle-mobile-nav {
+    display: block !important;
+    background: url(../../assets/icons/menu.svg);
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+  .toggle-mobile-nav[aria-expanded="true"] {
+    background: url(../../assets/icons/close.svg);
+    color: white;
+  }
+}
