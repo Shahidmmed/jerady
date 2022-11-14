@@ -1,12 +1,9 @@
 import React from "react";
+import { getImgUrl } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
 import "./Home.scss";
 
 const Home = () => {
-  function getImgUrl(name) {
-    return new URL(`${name}`, import.meta.url).href;
-  }
-
   return (
     <div>
       <div className="uk-section-large uk-container">

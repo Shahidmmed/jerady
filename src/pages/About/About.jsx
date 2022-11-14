@@ -3,16 +3,14 @@ import { experience } from "../../data/info";
 import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
 import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
 import "./About.scss";
-const gallery = import.meta.glob("../../assets/images/bookCovers/*");
+import { getImgUrl } from "../../data/functions";
+const gallery = import.meta.glob("../../assets/images/bookCovers/*.(png|jpg)");
 
 const About = () => {
   var bookCovers = [];
-
-  bookCovers = Object.keys(gallery);
-
-  function getImgUrl(name) {
-    return new URL(`${name}`, import.meta.url).href;
-  }
+  bookCovers = Object.keys(gallery).map((bc) =>
+    bc?.replace("../../assets/images/", "")
+  );
 
   return (
     <div>

@@ -38,17 +38,17 @@ export const selectedProjects = [
   {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
-    image: "../../assets/images/caseStudies/Spayces/Spaycescover.jpg",
+    image: "caseStudies/Spayces/Spaycescover.jpg",
   },
   {
     name: "Bethniel Finance",
     previewText: "Shaping the future of personal Finance",
-    image: "../../assets/images/caseStudies/BethnielFinance/bethcover.png",
+    image: "caseStudies/BethnielFinance/bethcover.png",
   },
   {
     name: "Sapphire",
     previewText: "Powering the Modern Fuel  Supply Experience",
-    image: "../../assets/images/caseStudies/Sapphire/SapphireCover.png",
+    image: "caseStudies/Sapphire/SapphireCover.png",
   },
   {
     name: "",
