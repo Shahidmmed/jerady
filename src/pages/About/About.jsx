@@ -3,13 +3,12 @@ import { experience } from "../../data/info";
 import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
 import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
 import "./About.scss";
+const gallery = import.meta.glob("../../assets/images/bookCovers/*");
 
 const About = () => {
   var bookCovers = [];
 
-  bookCovers = Object.keys(
-    import.meta.glob("../../assets/images/bookCovers/*")
-  );
+  bookCovers = Object.keys(gallery);
 
   function getImgUrl(name) {
     return new URL(`${name}`, import.meta.url).href;
