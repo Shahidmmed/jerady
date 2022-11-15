@@ -17,7 +17,7 @@ const About = () => {
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
           <h1 className="header-text">About Me</h1>
-          <p>
+          <p className="about-text">
             I am an Experience Designer with a Graphic Design, Research and
             Creative Writing background who tries not to take herself seriously.
             When I'm not contributing to solving business and user problems, I'm
@@ -34,11 +34,11 @@ const About = () => {
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h1 className="header-text">
+          <h2 className="header-text about-text">
             I’m currently helping to lead, and mentor the Bethniel Finance team
             as Design Lead.
-          </h1>
-          <p>
+          </h2>
+          <p className="about-text">
             With each passing day, I’m inspired by the opportunity to help solve
             real problems. I’m always trying to improve my craft, continue
             learning, and help others grow as designers. I've also helped to
@@ -47,7 +47,7 @@ const About = () => {
             initiate new product design practices, ensuring seamless execution
             and delivery.
           </p>
-          <p>
+          <p className="about-text">
             I approach my work with an open mind and flexibility, allowing me to
             adapt to situations effortlessly.
           </p>
@@ -67,7 +67,7 @@ const About = () => {
                 ))}
             </ul>
           </div>
-          <div className="uk-margin">
+          <div className="uk-margin-large-top">
             <button className="uk-button uk-button-default jerday-btn">
               Download my resume
             </button>
@@ -77,16 +77,16 @@ const About = () => {
 
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text uk-margin-remove">
+          <h2 className="header-text uk-margin-large-bottom">
             Some books I have read
           </h2>
           <div
-            className="uk-child-width-1-2@s uk-margin-top uk-padding"
+            className="uk-child-width-1-4@s uk-margin-top uk-padding-small"
             data-uk-grid
           >
             {bookCovers &&
               bookCovers.map((image, index) => (
-                <div key={index}>
+                <div key={index} className="book">
                   <img
                     className="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle book-card"
                     src={getImgUrl(image)}
@@ -99,24 +99,29 @@ const About = () => {
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h1 className="header-text">What I’m listening to right now</h1>
-          <div
-            className="uk-child-width-1-2@s uk-margin-top uk-padding"
-            data-uk-grid
-          >
-            <div>
-              <img src={playlist2} alt="" className="music" />
-            </div>
-            <div>
-              <h3 className="header-text">Eunoia</h3>
-              <p>A playlist curated by me on Apple Music</p>
-            </div>
-            <div>
-              <h3 className="header-text">Cockaigne</h3>
-              <p>A playlist curated by me on Spotify</p>
-            </div>
-            <div>
-              <img src={playlist1} alt="" className="music" />
+          <h1 className="header-text uk-margin-large-bottom">
+            What I’m listening to right now
+          </h1>
+          <div className="uk-width-3-4">
+            <div
+              className="uk-child-width-1-2@s uk-margin-top uk-padding-small"
+              data-uk-grid
+            >
+              <div>
+                <img src={playlist1} alt="" className="music" />
+              </div>
+
+              <div>
+                <h3 className="header-text">Eunoia</h3>
+                <p>A playlist curated by me on Apple Music</p>
+              </div>
+              <div>
+                <h3 className="header-text">Cockaigne</h3>
+                <p>A playlist curated by me on Spotify</p>
+              </div>
+              <div>
+                <img src={playlist2} alt="" className="music" />
+              </div>
             </div>
           </div>
         </div>

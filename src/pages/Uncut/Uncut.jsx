@@ -1,7 +1,25 @@
 import React from "react";
 import "./Uncut.scss";
+import { TinderLikeCard } from "react-stack-cards";
+import { useState } from "react";
+const graphicDesign = import.meta.glob(
+  "../../assets/images/GraphicDesign/*.(png|jpg)"
+);
+const brandDesign = import.meta.glob(
+  "../../assets/images/BrandDesign/*.(png|jpg)"
+);
+const marketingDesign = import.meta.glob(
+  "../../assets/images/MarketingDesign/*.(png|jpg)"
+);
 
 const Uncut = () => {
+  const [swipe, setSwipe] = useState(false);
+  var brand = [];
+  brand = Object.keys(brandDesign);
+  console.log(brand);
+
+  const onSwipe = () => {};
+
   return (
     <div>
       <div className="uk-section-large uk-container">
@@ -19,12 +37,15 @@ const Uncut = () => {
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
           <h4 className="header-text">BRAND DESIGN</h4>
-          <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card">
-            <p>
-              A selection of Creative Technology, Content Storytelling and
-              Design Interaction projects.
-            </p>
-          </div>
+          <TinderLikeCard
+            images={brand}
+            width="600"
+            height="560"
+            direction="swipeRight"
+            duration={400}
+            className="tinder"
+          ></TinderLikeCard>
+          <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
         </div>
       </div>
       <div className="uk-section-large uk-container">
@@ -39,24 +60,6 @@ const Uncut = () => {
           <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
         </div>
       </div>
-
-      {/* <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text uk-margin-remove">Courses I've taken</h2>
-          <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
-            <div>
-              <div className="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uncut-card">
-                Item
-              </div>
-            </div>
-            <div className="">
-              <div className="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uncut-card">
-                Item
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

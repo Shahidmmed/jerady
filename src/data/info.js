@@ -38,7 +38,7 @@ export const selectedProjects = [
   {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
-    image: "caseStudies/Spayces/Spaycescover.jpg",
+    image: "caseStudies/Spayces/spaycescover.jpg",
   },
   {
     name: "Bethniel Finance",
@@ -48,7 +48,7 @@ export const selectedProjects = [
   {
     name: "Sapphire",
     previewText: "Powering the Modern Fuel  Supply Experience",
-    image: "caseStudies/Sapphire/SapphireCover.png",
+    image: "caseStudies/Sapphire/sapphireCover.png",
   },
   {
     name: "",

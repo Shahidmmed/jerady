@@ -15,6 +15,9 @@ small {
   li:nth-child(3) {
     margin-top: -10px !important;
   }
+  li:nth-child(4) {
+    margin-top: 35px !important;
+  }
   .work-card {
     border-radius: 15px;
     min-height: 650px;
@@ -48,7 +51,6 @@ small {
   border-radius: 50%;
   height: 300px;
   width: 300px;
-  margin-left: 50px;
 }
 
 .summary {

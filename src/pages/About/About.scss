@@ -1,22 +1,27 @@
 .experience {
   .year {
     font-family: Cabin-Bold;
-    color: #ffff;
+    color: #a2a2a2;
   }
   .work {
     font-family: Cabin-Bold;
-    color: #ffff;
+    color: #f4f4f4;
   }
 }
-
+.about-text {
+  max-width: 890px;
+}
 .experience ul li {
   list-style: none;
 }
+.book {
+  padding-left: 20px !important;
+}
 .book-card {
-  border-radius: 15px;
+  border-radius: 6px;
   background-color: #353535 !important;
-  height: 430px;
-  width: 340px;
+  height: 345px;
+  width: 260px;
 }
 .music {
   height: 320px;

@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <div className="uk-container">
       <div className=" uk-padding">
-        <hr />
-        <div className=" uk-flex uk-flex-between@s">
+        <hr className="bottom-line" />
+        <div className="uk-flex uk-flex-between@s footer-section">
           <h2 className="footer-text">
             Let’s Connect and talk about music, conspiracy theories and all
             things design.
           </h2>
-          <div>
+          <div className="uk-margin-top">
             <a href="#" className="uk-margin-right social">
               <Linkedin />
             </a>
@@ -23,6 +23,13 @@ const Footer = () => {
               <Twitter />
             </a>
           </div>
+        </div>
+        <hr className="bottom-line" />
+        <div className="uk-padding">
+          <p className="uk-text-center">
+            Made With Warmth and a Cup of Chamomile Tea
+          </p>
+          <p className="uk-text-center">2022 AJ Mensah</p>
         </div>
       </div>
     </div>
