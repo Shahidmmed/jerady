@@ -16,12 +16,20 @@ const marketingDesign = import.meta.glob(
 const Uncut = () => {
   const [swipe, setSwipe] = useState(false);
   var brand = [];
-  brand = Object.keys(marketingDesign).map((bc) =>
+  var marketing = [];
+  var graphic = [];
+  brand = Object.keys(brandDesign).map((bc) =>
+    getImgUrl(bc?.replace("../../assets/images/", ""))
+  );
+  marketing = Object.keys(marketingDesign).map((bc) =>
+    getImgUrl(bc?.replace("../../assets/images/", ""))
+  );
+  graphic = Object.keys(graphicDesign).map((bc) =>
     getImgUrl(bc?.replace("../../assets/images/", ""))
   );
 
-  const onSwipe = () => {
-    setSwipe(true);
+  const onSwipe = (e) => {
+    e.target.Tinder.swipe();
   };
 
   return (
@@ -29,7 +37,7 @@ const Uncut = () => {
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
           <h1 className="header-text">Side Missions</h1>
-          <p>
+          <p className="uncut-text">
             I am an Experience Designer with a Graphic Design, Research and
             Creative Writing background who tries not to take herself seriously.
             When I'm not contributing to solving business and user problems, I'm
@@ -43,27 +51,42 @@ const Uncut = () => {
           <h4 className="header-text">BRAND DESIGN</h4>
           <TinderLikeCard
             images={brand}
-            width="600"
+            width="950"
             height="560"
             direction="swipeRight"
             duration={400}
             className="tinder"
+            onClick={onSwipe}
           ></TinderLikeCard>
-          <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
         </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
           <h4 className="header-text">MARKETING DESIGN</h4>
-          <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
+          <TinderLikeCard
+            images={marketing}
+            width="950"
+            height="560"
+            direction="swipeRight"
+            duration={400}
+            className="tinder"
+          ></TinderLikeCard>
         </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
           <h4 className="header-text">GRAPHIC DESIGN</h4>
-          <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
+          <TinderLikeCard
+            images={graphic}
+            width="950"
+            height="560"
+            direction="swipeRight"
+            duration={400}
+            className="tinder"
+          ></TinderLikeCard>
         </div>
       </div>
+      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
     </div>
   );
 };

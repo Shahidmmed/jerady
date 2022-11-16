@@ -17,7 +17,10 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section uk-container" id="projects">
+      <div
+        className="uk-section uk-container uk-margin-large-bottom"
+        id="projects"
+      >
         <div className="uk-padding">
           <div className=" uk-margin-large">
             <h2 className="header-text uk-margin-remove">Selected Projects</h2>
@@ -52,7 +55,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
+      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top">
         <div className="uk-padding">
           <div className="uk-margin" data-uk-grid>
             <div className="uk-width-auto">
@@ -64,13 +68,13 @@ const Home = () => {
             </div>
             <div className="uk-width-expand">
               <div className="home-contact">
-                <h1 className="header-text">Need some help on a project</h1>
+                <h2 className="header-text">Need some help on a project</h2>
                 <p>
-                  A selection of Creative Technology, Content Storytelling and
-                  Design Interaction projects.
+                  Send an email if you would like to collaborate or have
+                  questions about my work.
                 </p>
                 <button className="uk-button uk-button-default jerday-btn">
-                  Get in touch
+                  Send Email
                 </button>
               </div>
             </div>

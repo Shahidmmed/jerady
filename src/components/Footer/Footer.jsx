@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Linkedin, Twitter } from "react-feather";
+import { Instagram, Linkedin, Mail, Twitter } from "react-feather";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -14,13 +14,16 @@ const Footer = () => {
           </h2>
           <div className="uk-margin-bottom">
             <a href="#" className="uk-margin-right social">
-              <Linkedin />
+              <Mail className="fill" />
+            </a>
+            <a href="#" className="uk-margin-right social linkedin">
+              <span data-uk-icon="linkedin" className="reverse-fill"></span>
             </a>
             <a href="#" className="uk-margin-right social">
               <Instagram />
             </a>
             <a href="#" className="uk-margin-right social">
-              <Twitter />
+              <Twitter className="fill" />
             </a>
           </div>
         </div>

@@ -3,10 +3,16 @@
   color: #ffff !important;
 }
 .footer-section {
-  align-items: center;
+  align-items: end;
 }
 .social {
   color: white;
+}
+.linkedin {
+  padding: 1px;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
 }
 .footer-bottom {
   align-items: center;
@@ -15,4 +21,12 @@
 }
 .bottom-line {
   border-top: 0.7px solid #e4e7ec;
+}
+.fill {
+  fill: white;
+  stroke: black;
+}
+.reverse-fill {
+  stroke: white !important;
+  fill: black !important;
 }

@@ -8,3 +8,111 @@
   background-color: #353535 !important;
   height: 430px;
 }
+.tinder {
+  margin: auto;
+  border-radius: 16px !important;
+}
+.tinder > div {
+  border-radius: 16px !important;
+}
+.uncut-text {
+  max-width: 720px;
+}
+
+@media (max-width: 1075px) {
+  .tinder {
+    width: 890px !important;
+  }
+  .tinder > div {
+    max-width: 890px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tinder {
+    width: 850px !important;
+  }
+  .tinder > div {
+    max-width: 850px !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .tinder {
+    width: 800px !important;
+  }
+  .tinder > div {
+    max-width: 800px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .tinder {
+    width: 760px !important;
+  }
+  .tinder > div {
+    max-width: 760px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .tinder {
+    width: 640px !important;
+  }
+  .tinder > div {
+    max-width: 640px !important;
+  }
+}
+
+@media (max-width: 740px) {
+  .tinder {
+    width: 540px !important;
+  }
+  .tinder > div {
+    max-width: 540px !important;
+  }
+}
+
+@media (max-width: 630px) {
+  .tinder {
+    width: 480px !important;
+    height: 480px !important;
+  }
+  .tinder > div {
+    max-width: 480px !important;
+    max-height: 480px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .tinder {
+    width: 360px !important;
+    height: 360px !important;
+  }
+  .tinder > div {
+    max-width: 360px !important;
+    max-height: 360px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tinder {
+    width: 320px !important;
+    height: 320px !important;
+  }
+  .tinder > div {
+    max-width: 320px !important;
+    max-height: 320px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .tinder {
+    width: 275px !important;
+    height: 275px !important;
+  }
+  .tinder > div {
+    max-width: 275px !important;
+    max-height: 275px !important;
+  }
+}
