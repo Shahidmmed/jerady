@@ -3,6 +3,7 @@ import "./Uncut.scss";
 import { TinderLikeCard } from "react-stack-cards";
 import { useState } from "react";
 import { getImgUrl } from "../../data/functions";
+import { useRef } from "react";
 const graphicDesign = import.meta.glob(
   "../../assets/images/GraphicDesign/*.(png|jpg)"
 );
@@ -15,12 +16,15 @@ const marketingDesign = import.meta.glob(
 
 const Uncut = () => {
   const [swipe, setSwipe] = useState(false);
+  const stackRef = useRef();
   var brand = [];
   brand = Object.keys(marketingDesign).map((bc) =>
     getImgUrl(bc?.replace("../../assets/images/", ""))
   );
 
-  const onSwipe = () => {};
+  const onSwipe = () => {
+    stackRef.current.swipe();
+  };
 
   return (
     <div>
@@ -40,6 +44,7 @@ const Uncut = () => {
         <div className=" uk-margin-large uk-padding">
           <h4 className="header-text">BRAND DESIGN</h4>
           <TinderLikeCard
+            ref={stackRef}
             images={brand}
             width="600"
             height="560"
@@ -47,6 +52,7 @@ const Uncut = () => {
             duration={400}
             className="tinder"
           ></TinderLikeCard>
+          <button onClick={onSwipe}>swipey</button>
           <div className="uk-card uk-card-default uk-card-large uk-card-body brand-card"></div>
         </div>
       </div>
