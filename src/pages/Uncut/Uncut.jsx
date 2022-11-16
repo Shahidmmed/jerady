@@ -18,7 +18,9 @@ const Uncut = () => {
   brand = Object.keys(brandDesign);
   console.log(brandDesign);
 
-  const onSwipe = () => {};
+  const onSwipe = () => {
+    setSwipe(true);
+  };
 
   return (
     <div>
