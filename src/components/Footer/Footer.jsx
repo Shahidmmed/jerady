@@ -12,7 +12,7 @@ const Footer = () => {
             Let’s Connect and talk about music, conspiracy theories and all
             things design.
           </h2>
-          <div className="uk-margin-top">
+          <div className="uk-margin-bottom">
             <a href="#" className="uk-margin-right social">
               <Linkedin />
             </a>
