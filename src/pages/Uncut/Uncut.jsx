@@ -2,6 +2,7 @@ import React from "react";
 import "./Uncut.scss";
 import { TinderLikeCard } from "react-stack-cards";
 import { useState } from "react";
+import { getImgUrl } from "../../data/functions";
 const graphicDesign = import.meta.glob(
   "../../assets/images/GraphicDesign/*.(png|jpg)"
 );
@@ -15,8 +16,9 @@ const marketingDesign = import.meta.glob(
 const Uncut = () => {
   const [swipe, setSwipe] = useState(false);
   var brand = [];
-  brand = Object.keys(brandDesign);
-  console.log(brandDesign);
+  brand = Object.keys(marketingDesign).map((bc) =>
+    getImgUrl(bc?.replace("../../assets/images/", ""))
+  );
 
   const onSwipe = () => {
     setSwipe(true);
