@@ -4,9 +4,9 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87) !important;
-  background-color: #040404;
+  color-scheme: light;
+  color: #040404 !important;
+  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,12 +35,13 @@ a:hover {
 
 .header-text {
   font-family: Cabin-Bold !important;
-  color: #ffff;
+  color: #040404;
 }
 
 .jerday-btn {
-  background: white !important;
-  border-radius: 10px !important;
+  background: #f2f2f2 !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
 }
 
 h2 {

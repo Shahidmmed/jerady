@@ -1,32 +1,36 @@
 .footer-text {
   max-width: 550px;
-  color: #ffff !important;
+  color: black !important;
+  font-family: Cabin;
 }
 .footer-section {
   align-items: end;
 }
 .social {
-  color: white;
+  color: black;
 }
 .linkedin {
   padding: 1px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 2px;
-  background-color: white;
+  background-color: black;
 }
 .footer-bottom {
   align-items: center;
   justify-items: center;
   display: flex;
 }
+.bottom-text {
+  color: #8e8e8e;
+}
 .bottom-line {
-  border-top: 0.7px solid #e4e7ec;
+  border-top: 0.7px solid #040404;
 }
 .fill {
-  fill: white;
-  stroke: black;
+  fill: black;
+  stroke: white;
 }
 .reverse-fill {
-  stroke: white !important;
-  fill: black !important;
+  stroke: black !important;
+  fill: white !important;
 }

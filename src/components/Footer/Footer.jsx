@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="uk-container">
+    <div className="uk-container" id="contact">
       <div className=" uk-padding">
         <hr className="bottom-line" />
         <div className="uk-flex uk-flex-between@s footer-section">
@@ -13,26 +13,42 @@ const Footer = () => {
             things design.
           </h2>
           <div className="uk-margin-bottom">
-            <a href="#" className="uk-margin-right social">
+            <a
+              href="mailto:jeradybrew18@gmail.com"
+              className="uk-margin-right social"
+              target="_blank"
+            >
               <Mail className="fill" />
             </a>
-            <a href="#" className="uk-margin-right social linkedin">
+            <a
+              href="https://www.linkedin.com/in/aj-mensah-04517523a"
+              className="uk-margin-right social linkedin"
+              target="_blank"
+            >
               <span data-uk-icon="linkedin" className="reverse-fill"></span>
             </a>
-            <a href="#" className="uk-margin-right social">
+            <a
+              href="https://www.instagram.com/ayycalaiss"
+              className="uk-margin-right social"
+              target="_blank"
+            >
               <Instagram />
             </a>
-            <a href="#" className="uk-margin-right social">
+            <a
+              href="https://twitter.com/ayycalaiss"
+              className="uk-margin-small-right social"
+              target="_blank"
+            >
               <Twitter className="fill" />
             </a>
           </div>
         </div>
         <hr className="bottom-line" />
-        <div className="uk-padding">
-          <p className="uk-text-center">
+        <div className="uk-padding-small bottom-text">
+          <p className="uk-text-right">
             Made With Warmth and a Cup of Chamomile Tea
           </p>
-          <p className="uk-text-center">2022 AJ Mensah</p>
+          <p className="uk-text-right">&copy; 2022 AJ Mensah</p>
         </div>
       </div>
     </div>

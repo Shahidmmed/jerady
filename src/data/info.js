@@ -36,19 +36,22 @@ export const music = [
 
 export const selectedProjects = [
   {
+    name: "Bethniel Finance",
+    previewText: "Shaping and improving the future of personal finance",
+    image: "caseStudies/BethnielFinance/bethcover.png",
+    page: "/casestudy/bethniel",
+  },
+  {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
     image: "caseStudies/Spayces/spaycescover.jpg",
-  },
-  {
-    name: "Bethniel Finance",
-    previewText: "Shaping the future of personal Finance",
-    image: "caseStudies/BethnielFinance/bethcover.png",
+    page: "/casestudy/spayces",
   },
   {
     name: "Sapphire",
-    previewText: "Powering the Modern Fuel  Supply Experience",
+    previewText: "Powering the Modern Fuel Supply Experience",
     image: "caseStudies/Sapphire/sapphireCover.png",
+    page: "/casestudy/sapphire",
   },
   {
     name: "",

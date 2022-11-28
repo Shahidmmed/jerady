@@ -1,9 +1,9 @@
 .top-nav {
-  background-color: #040404;
-  box-shadow: 0 10px 10px -12px rgb(214 210 210 / 16%);
+  background-color: #fff;
+  box-shadow: 0 10px 10px -12px rgb(56 56 56 / 16%);
   font-family: Cabin;
   .nav-section {
-    background-color: #040404;
+    background-color: #fff;
     padding: 6px;
     a {
       color: var(--textShade300) !important;
@@ -13,12 +13,12 @@
     .logo {
       padding: 0;
       img {
-        height: 38px;
+        height: 45px;
       }
     }
     .menu-btn {
       font-family: Cabin;
-      color: #ffff !important;
+      color: #040404 !important;
     }
     .menu-btn:after {
       content: "";

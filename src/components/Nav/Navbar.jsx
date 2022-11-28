@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
-import logo from "../../assets/logos/whitelogo1.png";
-import { Link } from "react-router-dom";
+import logo from "../../assets/logos/jiggy2.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [navToggled, setNavToggled] = useState(false);
+
+  const navigate = useNavigate();
 
   const showNav = () => {
     const primaryNav = document.querySelector(".primary-nav");
@@ -31,6 +33,18 @@ const Navbar = () => {
     });
   };
 
+  const scroll = () => {
+    const section = document.querySelector("#contact");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const scrollProjects = (e) => {
+    const section = document.querySelector("#projects");
+
+    e.preventDefault();
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div
       className="top-nav"
@@ -40,7 +54,7 @@ const Navbar = () => {
         <div className="uk-navbar-left uk-margin-left">
           <ul className="uk-navbar-nav left-nav">
             <li>
-              <Link className="uk-navbar-item logo" to="/">
+              <Link className="uk-navbar-item logo" to="#">
                 <img src={logo} alt="logo" />
               </Link>
             </li>
@@ -58,7 +72,11 @@ const Navbar = () => {
           </button>
           <ul className="uk-navbar-nav primary-nav" data-visible="false">
             <li>
-              <Link className="uk-navbar-item menu-btn" to="/#projects">
+              <Link
+                className="uk-navbar-item menu-btn"
+                to="/#projects"
+                /* onClick={scrollProjects} */
+              >
                 Work
               </Link>
             </li>
@@ -73,7 +91,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="uk-navbar-item menu-btn" to="/contact">
+              <Link className="uk-navbar-item menu-btn" to="#" onClick={scroll}>
                 Contact
               </Link>
             </li>

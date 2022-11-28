@@ -1,4 +1,45 @@
+.study-header {
+  max-width: 500px;
+}
 .study-image {
   max-width: 1200px;
   max-height: 792px;
+}
+.uk-tab {
+  justify-content: space-between;
+}
+.uk-tab > .uk-active > a {
+  border-color: transparent !important;
+}
+.uk-tab li {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.uk-tab li.uk-active a {
+  position: relative;
+  margin-bottom: 20px;
+}
+.uk-tab li.uk-active a::after {
+  content: "•" !important;
+  color: #1e87f0;
+  font-size: 45px;
+  margin-top: 35px;
+  position: absolute;
+  z-index: -1;
+}
+.long-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.long-image {
+  object-fit: contain;
+  max-width: 70%;
+}
+.xlong-image {
+  object-fit: contain;
+  max-width: 60%;
+}
+.image-block {
+  background-color: #eeee;
 }
