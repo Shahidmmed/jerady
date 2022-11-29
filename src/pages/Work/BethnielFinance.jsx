@@ -1,24 +1,24 @@
 import React from "react";
-import sapphireCover from "../../assets/images/caseStudies/Sapphire/sapphireCover.png";
+import home from "../../assets/images/caseStudies/BethnielFinance/Home.png";
+import frame1 from "../../assets/images/caseStudies/BethnielFinance/Frame20252.png";
 
-const Sapphire = () => {
+const BethnielFinance = () => {
   return (
     <div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h5 className="study-name uk-margin-remove">SAPPHIRE</h5>
+          <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
           <h1 className="header-text study-header uk-margin-remove">
-            Powering the Modern Fuel Supply Experience
+            Designing a dashboard for finance experts
           </h1>
           <p className="study-brief uk-margin-top">
-            Spayces is a Table Reservation App that provides reliable and
-            accurate restaurant information (personalized menus, prices,
-            location, contact details etc)and also gives users the option to
-            pre-order meals ahead of any occasion.
+            Bethniel Finance is a super app that incorporates all things
+            personal finance into one blah nubcvo;dvudbihnposhihhjdjddhd
+            dudo;ihdbuvdvo’d dubdohsbd dihnokpdpjd.
           </p>
           <div className="study-image" data-uk-lightbox="animation: fade">
-            <a href={sapphireCover}>
-              <img src={sapphireCover} alt="" />
+            <a href={frame1}>
+              <img src={frame1} alt="" />
             </a>
           </div>
         </div>
@@ -49,11 +49,14 @@ const Sapphire = () => {
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
-              Role: UX Design, User Research, Prototyping, Usability Testing.
+              Role: Design Lead, UX Design, UI Design, User Research,
+              Prototyping, Usability Testing.
             </p>
-            <p>Tools: Figma, Airtable, Adobe Illustrator, Miro, iPad</p>
-            <p>Team: AJ Mensah, Naa Ayeley Ayettey, Daniel Olukoya</p>
-            <p>Timeline: 29/03/2022-7/07/2022</p>
+            <p>
+              Tools: Figma, Protopie, Airtable, Adobe Illustrator, Miro, iPad
+            </p>
+            <p>Team: AJ Mensah- UX Lead Samuel Lartey- Developer</p>
+            <p>Timeline: 03/10/2022-7/11/2022</p>
           </div>
         </div>
       </div>
@@ -61,31 +64,31 @@ const Sapphire = () => {
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>
-            As part of its grand vision to thrive amidst growing competition and
-            to establish itself as the all-in-one platform for stakeholders to
-            manage their personal finance needs, the Fintech Startup contracted
-            me to do a design overhaul of the Betnhiel Finance mobile app.
+            Overview Bethniel Finace is one of Africa’s reputable Financial
+            technology companies, headquartered in Accra. But even with this
+            status, it still has stiff competition for market share with other
+            top companies like Bamboo. One way the team plans to stay ahead of
+            the curve is to establish itself as the all-in-one platform for
+            stakeholders to manage their personal finance needs.
           </p>
           <p>
-            Over the last few months at Bethniel I've led the team to (re)design
-            viable multi-platform products that materialised business goals of
+            Over the last few months at Bethniel I've led the team to design
+            viable multi-platform products that materialised their goals of
             increasing customer adoption rates by 30% and increased revenue by
-            as much as 2x, helping the company to stay ahead of the curve.
+            as much as 2x, helping the company stay ahead of the curve amidst
+            growing competition.
           </p>
         </div>
-      </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding"></div>
-      </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding"></div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text">Forming the Hypothesis</h2>
+          <div data-uk-lightbox="animation: fade">
+            <a href={home}>
+              <img src={home} alt="" />
+            </a>
+          </div>
         </div>
       </div>
-
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Final Screens</h2>
@@ -97,4 +100,4 @@ const Sapphire = () => {
   );
 };
 
-export default Sapphire;
+export default BethnielFinance;

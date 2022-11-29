@@ -91,7 +91,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container image-block">
+      <div className="uk-section-large uk-padding-remove-vertical image-block">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame1}>
@@ -120,10 +120,14 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="study-image" data-uk-lightbox="animation: fade">
-        <a href={frame2}>
-          <img src={frame2} alt="" />
-        </a>
+      <div className="uk-section-large uk-padding-remove-vertical image-block">
+        <div className=" uk-margin-large uk-padding">
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={frame2}>
+              <img src={frame2} alt="" />
+            </a>
+          </div>
+        </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
@@ -154,12 +158,17 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="study-image" data-uk-lightbox="animation: fade">
-        <a href={frame3}>
-          <img src={frame3} alt="" />
-        </a>
+      <div className="uk-section-large uk-padding-remove-vertical image-block">
+        <div className=" uk-margin-large uk-padding">
+          <h4 className="header-text">Key Insights from Survey</h4>
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={frame3}>
+              <img src={frame3} alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container">
         <div className=" uk-margin-large uk-padding">
           The survey armed us with insights and the face- to face user
           interviews gave us further understanding of our users’ needs and
@@ -167,7 +176,7 @@ const Spayces = () => {
           to define our target persona to give context to the challenge. 
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-padding-remove-top">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame4} className="long-container">
@@ -175,6 +184,9 @@ const Spayces = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="uk-section-large uk-container">
+        <div className="uk-margin-large uk-padding"></div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
@@ -186,7 +198,7 @@ const Spayces = () => {
           than just what they said to me.
         </div>
       </div>
-      <div className="uk-section-xlarge uk-container">
+      <div className="uk-section-xlarge uk-padding-remove-top">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame5} className="long-container">
@@ -194,6 +206,9 @@ const Spayces = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="uk-section-large uk-container">
+        <div className="uk-margin-large uk-padding"></div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
@@ -314,7 +329,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-padding-remove-top uk-container">
         <div className="uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame10}>
@@ -324,6 +339,9 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container">
+        <div className="uk-margin-large uk-padding"></div>
+      </div>
+      <div className="uk-section-xlarge  uk-padding-remove-bottom uk-container">
         <div className=" uk-margin-large uk-padding">
           <p>
             Before working on the visual design, I had to ensure that the design
@@ -408,9 +426,9 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-padding-remove-top uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text">Testing</h2>
+          <h2 className="header-text">The Result</h2>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={onboarding}>
               <img src={onboarding} alt="" />

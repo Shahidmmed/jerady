@@ -44,19 +44,20 @@ export const selectedProjects = [
   {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
-    image: "caseStudies/Spayces/spaycescover.jpg",
+    image: "caseStudies/Spayces/spaycescover1.jpg",
     page: "/casestudy/spayces",
   },
   {
     name: "Sapphire",
     previewText: "Powering the Modern Fuel Supply Experience",
-    image: "caseStudies/Sapphire/sapphireCover.png",
+    image: "caseStudies/Sapphire/sapphireCover1.png",
     page: "/casestudy/sapphire",
   },
   {
-    name: "",
-    previewText: "",
-    image: "",
+    name: "Bethniel Finance",
+    previewText: "Designing a dashboard for personal finance experts",
+    image: "caseStudies/BethnielFinance/Default1.png",
+    page: "/casestudy/bethnielfin",
   },
 ];
 const caseStudies = [
