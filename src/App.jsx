@@ -8,6 +8,7 @@ import Bethniel from "./pages/Work/Bethniel";
 import BethnielFinance from "./pages/Work/BethnielFinance";
 import Sapphire from "./pages/Work/Sapphire";
 import Spayces from "./pages/Work/Spayces";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (

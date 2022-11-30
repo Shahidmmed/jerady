@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { getImgUrl } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
@@ -6,6 +6,10 @@ import ellipse from "../../assets/images/Ellipse42.png";
 import "./Home.scss";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="uk-section-large uk-container">

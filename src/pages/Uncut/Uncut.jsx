@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Uncut.scss";
 import { TinderLikeCard } from "react-stack-cards";
 import { useState, useRef } from "react";
@@ -15,6 +15,10 @@ const marketingDesign = import.meta.glob(
 
 const Uncut = () => {
   const [swipe, setSwipe] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   var brand = [];
   var marketing = [];

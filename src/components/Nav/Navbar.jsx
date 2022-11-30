@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="uk-navbar-left uk-margin-left">
           <ul className="uk-navbar-nav left-nav">
             <li>
-              <Link className="uk-navbar-item logo" to="#">
+              <Link className="uk-navbar-item logo" to="/">
                 <img src={logo} alt="logo" />
               </Link>
             </li>

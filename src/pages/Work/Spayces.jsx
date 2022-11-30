@@ -35,8 +35,8 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section-large uk-container uk-padding-remove-horizontal study-tab">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab>
             <li>
               <a href="#">OVERVIEW</a>

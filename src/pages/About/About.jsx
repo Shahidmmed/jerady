@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { experience } from "../../data/info";
 import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
 import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
@@ -12,6 +12,10 @@ const About = () => {
   bookCovers = Object.keys(gallery).map((bc) =>
     bc?.replace("../../assets/images/", "")
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
