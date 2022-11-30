@@ -8,40 +8,8 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
-  const showNav = () => {
-    const primaryNav = document.querySelector(".primary-nav");
-    const navToggle = document.querySelector(".toggle-mobile-nav");
-    const visibility = primaryNav.getAttribute("data-visible");
-
-    if (!navToggled) {
-      document.body.classList.add("scroll-lock");
-    } else {
-      document.body.classList.remove("scroll-lock");
-    }
-    setNavToggled(!navToggled);
-
-    if (visibility === "false") {
-      primaryNav.setAttribute("data-visible", "true");
-      navToggle.setAttribute("aria-expanded", "true");
-    } else if (visibility === "true") {
-      primaryNav.setAttribute("data-visible", "false");
-      navToggle.setAttribute("aria-expanded", "false");
-    }
-
-    primaryNav.addEventListener("focusout", () => {
-      console.log("click");
-    });
-  };
-
   const scroll = () => {
     const section = document.querySelector("#contact");
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const scrollProjects = (e) => {
-    const section = document.querySelector("#projects");
-
-    e.preventDefault();
     section.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -66,36 +34,48 @@ const Navbar = () => {
             aria-controls="primary-nav"
             aria-expanded="false"
             className="toggle-mobile-nav"
-            onClick={showNav}
-          >
-            <span className="sr-only"></span>
-          </button>
-          <ul className="uk-navbar-nav primary-nav" data-visible="false">
-            <li>
-              <Link
-                className="uk-navbar-item menu-btn"
-                to="/#projects"
-                /* onClick={scrollProjects} */
-              >
-                Work
-              </Link>
-            </li>
-            <li>
-              <Link className="uk-navbar-item menu-btn" to="/about">
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link className="uk-navbar-item menu-btn" to="/uncut">
-                Uncut Gems
-              </Link>
-            </li>
-            <li>
-              <Link className="uk-navbar-item menu-btn" to="#" onClick={scroll}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+            data-uk-toggle="target: #offcanvas-flip"
+          ></button>
+
+          <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+            <div className="uk-offcanvas-bar">
+              <button
+                className="uk-offcanvas-close"
+                type="button"
+                data-uk-close
+              ></button>
+              <ul className="uk-navbar-nav primary-nav" data-visible="false">
+                <li>
+                  <Link
+                    className="uk-navbar-item menu-btn"
+                    to="/#projects"
+                    /* onClick={scrollProjects} */
+                  >
+                    Work
+                  </Link>
+                </li>
+                <li>
+                  <Link className="uk-navbar-item menu-btn" to="/about">
+                    About Me
+                  </Link>
+                </li>
+                <li>
+                  <Link className="uk-navbar-item menu-btn" to="/uncut">
+                    Uncut Gems
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="uk-navbar-item menu-btn"
+                    to="#"
+                    onClick={scroll}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
