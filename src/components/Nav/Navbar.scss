@@ -19,8 +19,14 @@
   align-items: flex-start !important;
   p {
     font-size: xx-small;
+    transition: all 0.2s ease-in-out;
   }
   font-size: larger !important;
+}
+.menu-btn:hover {
+  p {
+    transform: scale(1.1);
+  }
 }
 
 .primary-nav {
