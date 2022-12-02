@@ -68,25 +68,27 @@ const Home = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
-      <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
-        <div className="uk-padding uk-padding-remove-bottom">
-          <div className="uk-margin" data-uk-grid>
-            <div className="uk-width-auto">
-              <img src={ellipse} alt="" className="home-image" />
-            </div>
-            <div className="uk-width-expand">
-              <div className="home-contact">
-                <h2 className="header-text">Need some help on a project</h2>
-                <p>
-                  Send an email if you would like to collaborate or have
-                  questions about my work.
-                </p>
-                <a
-                  href="mailto:jeradybrew18@gmail.com"
-                  className="uk-button uk-button-default jerday-btn"
-                >
-                  Send Email
-                </a>
+      <div className="ellipse-section">
+        <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
+          <div className="uk-padding uk-padding-remove-bottom">
+            <div className="uk-margin" data-uk-grid>
+              <div className="uk-width-auto">
+                <img src={ellipse} alt="" className="home-image" />
+              </div>
+              <div className="uk-width-expand">
+                <div className="home-contact">
+                  <h2 className="header-text">Need some help on a project</h2>
+                  <p>
+                    Send an email if you would like to collaborate or have
+                    questions about my work.
+                  </p>
+                  <a
+                    href="mailto:jeradybrew18@gmail.com"
+                    className="uk-button uk-button-default jerday-btn"
+                  >
+                    Send Email
+                  </a>
+                </div>
               </div>
             </div>
           </div>

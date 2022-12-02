@@ -11,12 +11,13 @@ import frame10 from "../../assets/images/caseStudies/Spayces/wireframes.png";
 import onboarding from "../../assets/images/caseStudies/Spayces/onboarding.png";
 import signup from "../../assets/images/caseStudies/Spayces/signup.png";
 import finalDesign from "../../assets/images/caseStudies/Spayces/finalDesign.png";
+import { HashLink } from "react-router-hash-link";
 import "./Work.scss";
 
 const Spayces = () => {
   return (
     <div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name">SPAYCES</h5>
           <h1 className="header-text study-header">
@@ -31,27 +32,32 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={bannerimage}>
               <img src={bannerimage} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-horizontal study-tab">
+      <div className="uk-section-large uk-container uk-padding-remove study-tab">
         <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab>
             <li>
-              <a href="#">OVERVIEW</a>
+              <HashLink to="/casestudy/spayces#overview">OVERVIEW</HashLink>
             </li>
             <li>
-              <a href="#">THE VOYAGE</a>
+              <HashLink to="/casestudy/spayces#voyage">THE VOYAGE</HashLink>
             </li>
             <li>
-              <a href="#">IDEATION</a>
+              <HashLink to="/casestudy/spayces#ideation">IDEATION</HashLink>
             </li>
             <li>
-              <a href="#">DESIGNS</a>
+              <HashLink to="/casestudy/spayces#designs">DESIGNS</HashLink>
             </li>
             <li>
-              <a href="#">FINAL THOUGHTS</a>
+              <HashLink to="/casestudy/spayces#thoughts">
+                FINAL THOUGHTS
+              </HashLink>
             </li>
           </ul>
 
@@ -68,7 +74,7 @@ const Spayces = () => {
             <p>Team: AJ Mensah, Naa Ayeley Ayettey, Daniel Olukoya </p>
             <p>Timeline: 29/03/2022-7/07/2022 </p>
           </div>
-          <div className="uk-margin">
+          <div className="uk-margin" id="overview">
             <h2 className="header-text">Overview</h2>
             <p>
               Spayces is a passion project birthed out of the need and
@@ -92,15 +98,18 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove-vertical image-block">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding-large">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame1}>
               <img src={frame1} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" id="voyage">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">The Voyage</h2>
           <p>
@@ -125,6 +134,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame2}>
               <img src={frame2} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -164,6 +176,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame3}>
               <img src={frame3} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -181,6 +196,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame4} className="long-container">
               <img src={frame4} alt="" className="long-image" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -203,6 +221,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame5} className="long-container">
               <img src={frame5} alt="" className="xlong-image" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -226,6 +247,7 @@ const Spayces = () => {
           {/*<div className="study-image" data-uk-lightbox="animation: fade">
              <a href={frame5}>
               <img src={frame5} alt="" />
+              <span className="gray-overlay"><span>Click to expand</span></span>
             </a> 
           </div>*/}
           missing image inaccurate information
@@ -248,6 +270,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame7}>
               <img src={frame7} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -285,6 +310,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame8}>
               <img src={frame8} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -309,6 +337,7 @@ const Spayces = () => {
           {/*<div className="study-image" data-uk-lightbox="animation: fade">
               <a href={frame8}>
               <img src={frame8} alt="" />
+              <span className="gray-overlay"><span>Click to expand</span></span>
             </a> 
           </div>*/}
           missing image user flow
@@ -334,6 +363,9 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame10}>
               <img src={frame10} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -369,6 +401,7 @@ const Spayces = () => {
           {/*  <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame8}>
               <img src={frame8} alt="" />
+              <span className="gray-overlay"><span>Click to expand</span></span>
             </a>
           </div> */}
           missing image mid fidelity prototype
@@ -432,16 +465,25 @@ const Spayces = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={onboarding}>
               <img src={onboarding} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={signup}>
               <img src={signup} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={finalDesign}>
               <img src={finalDesign} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
@@ -449,7 +491,7 @@ const Spayces = () => {
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" id="thoughts">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Final Thoughts</h2>
           <p>

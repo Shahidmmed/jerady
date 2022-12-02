@@ -1,10 +1,11 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import sapphireCover from "../../assets/images/caseStudies/Sapphire/sapphireCover.png";
 
 const Sapphire = () => {
   return (
     <div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">SAPPHIRE</h5>
           <h1 className="header-text study-header uk-margin-remove">
@@ -19,27 +20,32 @@ const Sapphire = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={sapphireCover}>
               <img src={sapphireCover} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-horizontal study-tab">
+      <div className="uk-section-large uk-container uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab>
             <li>
-              <a href="#">OVERVIEW</a>
+              <HashLink to="/casestudy/sapphire#overview">OVERVIEW</HashLink>
             </li>
             <li>
-              <a href="#">POKING & PRYING</a>
+              <HashLink to="/casestudy/sapphire#voyage">THE VOYAGE</HashLink>
             </li>
             <li>
-              <a href="#">IDEATION & TESTING</a>
+              <HashLink to="/casestudy/sapphire#ideation">IDEATION</HashLink>
             </li>
             <li>
-              <a href="#">DESIGNS</a>
+              <HashLink to="/casestudy/sapphire#designs">DESIGNS</HashLink>
             </li>
             <li>
-              <a href="#">FINAL THOUGHTS</a>
+              <HashLink to="/casestudy/sapphire#thoughts">
+                FINAL THOUGHTS
+              </HashLink>
             </li>
           </ul>
           <div></div>

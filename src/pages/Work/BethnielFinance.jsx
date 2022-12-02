@@ -1,11 +1,12 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import home from "../../assets/images/caseStudies/BethnielFinance/Home.png";
 import frame1 from "../../assets/images/caseStudies/BethnielFinance/Frame20252.png";
 
 const BethnielFinance = () => {
   return (
     <div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
           <h1 className="header-text study-header uk-margin-remove">
@@ -19,27 +20,32 @@ const BethnielFinance = () => {
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame1}>
               <img src={frame1} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-horizontal study-tab">
+      <div className="uk-section-large uk-container uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab>
             <li>
-              <a href="#">OVERVIEW</a>
+              <HashLink to="/casestudy/bethnielfin#overview">OVERVIEW</HashLink>
             </li>
             <li>
-              <a href="#">POKING & PRYING</a>
+              <HashLink to="/casestudy/bethnielfin#voyage">THE VOYAGE</HashLink>
             </li>
             <li>
-              <a href="#">IDEATION & TESTING</a>
+              <HashLink to="/casestudy/bethnielfin#ideation">IDEATION</HashLink>
             </li>
             <li>
-              <a href="#">DESIGNS</a>
+              <HashLink to="/casestudy/bethnielfin#designs">DESIGNS</HashLink>
             </li>
             <li>
-              <a href="#">FINAL THOUGHTS</a>
+              <HashLink to="/casestudy/bethnielfin#thoughts">
+                FINAL THOUGHTS
+              </HashLink>
             </li>
           </ul>
           <div></div>
@@ -60,7 +66,7 @@ const BethnielFinance = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" id="overview">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>
@@ -82,14 +88,17 @@ const BethnielFinance = () => {
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <div data-uk-lightbox="animation: fade">
+          <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={home}>
               <img src={home} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
             </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" id="thoughts">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Final Screens</h2>
           <div></div>

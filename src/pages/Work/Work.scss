@@ -4,9 +4,32 @@
 .study-image {
   max-width: 1200px;
   max-height: 792px;
+  margin: auto;
+  img {
+    margin: auto;
+  }
 }
+span.gray-overlay {
+  background: gray;
+  display: none;
+  height: inherit;
+  width: inherit;
+  position: relative;
+  bottom: 200px;
+} /*
+.study-image a:hover {
+  background: gray;
+  color: white;
+  text-decoration: none;
+}
+.study-image a:hover span.gray-overlay {
+  display: block;
+} */
 .study-tab {
   display: contents;
+}
+.study-brief {
+  max-width: 550px;
 }
 .uk-tab {
   justify-content: space-between;

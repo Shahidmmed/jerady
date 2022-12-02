@@ -61,3 +61,23 @@ small {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media (max-width: 420px) {
+  .ellipse-section {
+    display: none !important;
+  }
+  .work-cards {
+    .work-card {
+      min-height: 240px;
+    }
+    li:nth-child(2) {
+      margin-top: 30px !important;
+    }
+    li:nth-child(3) {
+      margin-top: 30px !important;
+    }
+    li:nth-child(4) {
+      margin-top: 30px !important;
+    }
+  }
+}

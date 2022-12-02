@@ -15,10 +15,11 @@ const Footer = () => {
             Let’s Connect and talk about music, conspiracy theories and all
             things design.
           </h2>
-          <div className="uk-margin-bottom">
+          <p className="email uk-margin-right">jeradybrew18@gmail.com</p>
+          <div className="uk-margin-bottom footer-socials">
             <a
               href="mailto:jeradybrew18@gmail.com"
-              className="uk-margin-right social"
+              className="uk-margin-right social mail"
               target="_blank"
             >
               <img src={mail} alt="" />
