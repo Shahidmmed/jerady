@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logos/jiggy2.png";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Instagram } from "react-feather";
 import LinkedIn from "../../assets/icons/LinkedIn.svg";
 import twitter from "../../assets/icons/Twitter.svg";
@@ -53,14 +54,10 @@ const Navbar = () => {
                 data-visible="false"
               >
                 <li>
-                  <Link
-                    className="uk-navbar-item menu-btn"
-                    to="/#projects"
-                    /* onClick={scrollProjects} */
-                  >
+                  <HashLink className="uk-navbar-item menu-btn" to="/#projects">
                     <p className="uk-margin-remove">Case Studies</p>
                     Work
-                  </Link>
+                  </HashLink>
                 </li>
                 <li>
                   <Link className="uk-navbar-item menu-btn" to="/about">

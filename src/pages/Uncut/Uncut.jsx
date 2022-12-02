@@ -34,6 +34,19 @@ const Uncut = () => {
     getImgUrl(bc?.replace("../../assets/images/", ""))
   );
 
+  let brand1 = brand;
+  for (let i = 0; i < 50; i++) {
+    brand1 = brand1.concat(brand);
+  }
+  let marketing1 = marketing;
+  for (let i = 0; i < 50; i++) {
+    marketing1 = marketing1.concat(marketing);
+  }
+  let graphic1 = graphic;
+  for (let i = 0; i < 50; i++) {
+    graphic1 = graphic1.concat(graphic);
+  }
+
   const stackRef = useRef();
 
   const onSwipe = (e) => {
@@ -68,7 +81,7 @@ const Uncut = () => {
         <div className="uk-margin-large uk-padding">
           <a onClick={onSwipe}>
             <TinderLikeCard
-              images={brand}
+              images={brand1}
               ref={stackRef}
               width="950"
               height="560"
@@ -87,7 +100,7 @@ const Uncut = () => {
         <div className=" uk-margin-large uk-padding">
           <a onClick={onMarketSwipe}>
             <TinderLikeCard
-              images={marketing}
+              images={marketing1}
               ref={marketRef}
               width="950"
               height="560"
@@ -105,7 +118,7 @@ const Uncut = () => {
         <div className=" uk-margin-large uk-padding">
           <a onClick={onGraphicSwipe}>
             <TinderLikeCard
-              images={graphic}
+              images={graphic1}
               ref={graphicRef}
               width="950"
               height="560"
