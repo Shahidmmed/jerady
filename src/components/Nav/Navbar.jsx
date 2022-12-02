@@ -53,39 +53,39 @@ const Navbar = () => {
                 data-visible="false"
               >
                 <li>
-                  {/* <span>Case Studies</span> */}
                   <Link
                     className="uk-navbar-item menu-btn"
                     to="/#projects"
                     /* onClick={scrollProjects} */
                   >
+                    <p className="uk-margin-remove">Case Studies</p>
                     Work
                   </Link>
                 </li>
                 <li>
-                  <span></span>
                   <Link className="uk-navbar-item menu-btn" to="/about">
+                    <p className="uk-margin-remove">Not Case Studies</p>
                     About Me
                   </Link>
                 </li>
                 <li>
-                  <span></span>
                   <Link className="uk-navbar-item menu-btn" to="/uncut">
+                    <p className="uk-margin-remove">Also not Case Studies</p>
                     Uncut Gems
                   </Link>
                 </li>
                 <li>
-                  <span></span>
                   <Link
                     className="uk-navbar-item menu-btn"
                     to="#"
                     onClick={scroll}
                   >
+                    <p className="uk-margin-remove">Want to reach me?</p>
                     Contact
                   </Link>
                 </li>
               </ul>
-              <div className="nav-socials">
+              <div className="nav-socials uk-margin-top">
                 <a
                   href="https://www.linkedin.com/in/aj-mensah-04517523a"
                   className="uk-margin-right social"

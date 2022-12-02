@@ -16,7 +16,7 @@ export const experience = [
     work: "User Experience Designer at Wonfliki",
   },
   {
-    year: "2012 - 2014",
+    year: "2018 - 2020",
     work: "Freelance + Internships",
   },
 ];

@@ -39,6 +39,16 @@ const Uncut = () => {
   const onSwipe = (e) => {
     stackRef.current.swipe();
   };
+  const marketRef = useRef();
+
+  const onMarketSwipe = (e) => {
+    marketRef.current.swipe();
+  };
+  const graphicRef = useRef();
+
+  const onGraphicSwipe = (e) => {
+    graphicRef.current.swipe();
+  };
 
   return (
     <div>
@@ -56,47 +66,58 @@ const Uncut = () => {
       </div>
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding">
-          <TinderLikeCard
-            images={brand}
-            ref={stackRef}
-            width="950"
-            height="560"
-            direction="swipeRight"
-            duration={400}
-            className="tinder"
-            onClick={onSwipe}
-          ></TinderLikeCard>
-          <button onClick={onSwipe}>swipe</button>
+          <a onClick={onSwipe}>
+            <TinderLikeCard
+              images={brand}
+              ref={stackRef}
+              width="950"
+              height="560"
+              direction="swipeRight"
+              duration={400}
+              className="tinder"
+              onClick={onSwipe}
+            ></TinderLikeCard>
+          </a>
         </div>
-        <div className="uk-margin-large uk-padding">
-          <h4 className="header-text">BRAND DESIGN</h4>
+        <div className="uk-margin-large uk-padding uncut-header">
+          <h3 className="header-text">BRAND DESIGN</h3>
         </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <TinderLikeCard
-            images={marketing}
-            width="950"
-            height="560"
-            direction="swipeRight"
-            duration={400}
-            className="tinder"
-          ></TinderLikeCard>
+          <a onClick={onMarketSwipe}>
+            <TinderLikeCard
+              images={marketing}
+              ref={marketRef}
+              width="950"
+              height="560"
+              direction="swipeRight"
+              duration={400}
+              className="tinder"
+            ></TinderLikeCard>
+          </a>
         </div>
-        <h4 className="header-text">MARKETING DESIGN</h4>
+        <div className="uk-margin-large uk-padding uncut-header">
+          <h3 className="header-text">MARKETING DESIGN</h3>
+        </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <TinderLikeCard
-            images={graphic}
-            width="950"
-            height="560"
-            direction="swipeRight"
-            duration={400}
-            className="tinder"
-          ></TinderLikeCard>
+          <a onClick={onGraphicSwipe}>
+            <TinderLikeCard
+              images={graphic}
+              ref={graphicRef}
+              width="950"
+              height="560"
+              direction="swipeRight"
+              duration={400}
+              className="tinder"
+            ></TinderLikeCard>
+          </a>
         </div>
-        <h4 className="header-text">GRAPHIC DESIGN</h4>
+        <div className="uk-margin-large uk-padding uncut-header">
+          <h3 className="header-text">GRAPHIC DESIGN</h3>
+        </div>
       </div>
       <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
     </div>
