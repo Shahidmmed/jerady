@@ -1,5 +1,8 @@
 import React from "react";
-import { Instagram, Linkedin, Mail, Twitter } from "react-feather";
+import { Instagram } from "react-feather";
+import LinkedIn from "../../assets/icons/LinkedIn.svg";
+import twitter from "../../assets/icons/Twitter.svg";
+import mail from "../../assets/icons/Mail.svg";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -18,14 +21,14 @@ const Footer = () => {
               className="uk-margin-right social"
               target="_blank"
             >
-              <Mail className="fill" />
+              <img src={mail} alt="" />
             </a>
             <a
               href="https://www.linkedin.com/in/aj-mensah-04517523a"
-              className="uk-margin-right social linkedin"
+              className="uk-margin-right social"
               target="_blank"
             >
-              <span data-uk-icon="linkedin" className="reverse-fill"></span>
+              <img src={LinkedIn} alt="" />
             </a>
             <a
               href="https://www.instagram.com/ayycalaiss"
@@ -39,7 +42,7 @@ const Footer = () => {
               className="uk-margin-small-right social"
               target="_blank"
             >
-              <Twitter className="fill" />
+              <img src={twitter} alt="" />
             </a>
           </div>
         </div>

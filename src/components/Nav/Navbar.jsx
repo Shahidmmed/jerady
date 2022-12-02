@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logos/jiggy2.png";
 import { Link, useNavigate } from "react-router-dom";
+import { Instagram } from "react-feather";
+import LinkedIn from "../../assets/icons/LinkedIn.svg";
+import twitter from "../../assets/icons/Twitter.svg";
+import mail from "../../assets/icons/Mail.svg";
 
 const Navbar = () => {
   const [navToggled, setNavToggled] = useState(false);
@@ -44,8 +48,12 @@ const Navbar = () => {
                 type="button"
                 data-uk-close
               ></button>
-              <ul className="uk-navbar-nav primary-nav" data-visible="false">
+              <ul
+                className="uk-navbar-nav primary-nav uk-margin-large-top"
+                data-visible="false"
+              >
                 <li>
+                  {/* <span>Case Studies</span> */}
                   <Link
                     className="uk-navbar-item menu-btn"
                     to="/#projects"
@@ -55,16 +63,19 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                  <span></span>
                   <Link className="uk-navbar-item menu-btn" to="/about">
                     About Me
                   </Link>
                 </li>
                 <li>
+                  <span></span>
                   <Link className="uk-navbar-item menu-btn" to="/uncut">
                     Uncut Gems
                   </Link>
                 </li>
                 <li>
+                  <span></span>
                   <Link
                     className="uk-navbar-item menu-btn"
                     to="#"
@@ -74,6 +85,36 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
+              <div className="nav-socials">
+                <a
+                  href="https://www.linkedin.com/in/aj-mensah-04517523a"
+                  className="uk-margin-right social"
+                  target="_blank"
+                >
+                  <img src={LinkedIn} alt="" />
+                </a>
+                <a
+                  href="https://www.instagram.com/ayycalaiss"
+                  className="uk-margin-right social"
+                  target="_blank"
+                >
+                  <Instagram />
+                </a>
+                <a
+                  href="https://twitter.com/ayycalaiss"
+                  className="uk-margin-small-right social"
+                  target="_blank"
+                >
+                  <img src={twitter} alt="" />
+                </a>
+                <a
+                  href="mailto:jeradybrew18@gmail.com"
+                  className="uk-margin-right social"
+                  target="_blank"
+                >
+                  <img src={mail} alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
