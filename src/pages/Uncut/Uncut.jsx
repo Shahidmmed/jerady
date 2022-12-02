@@ -55,8 +55,7 @@ const Uncut = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          <h4 className="header-text">BRAND DESIGN</h4>
+        <div className="uk-margin-large uk-padding">
           <TinderLikeCard
             images={brand}
             ref={stackRef}
@@ -69,10 +68,12 @@ const Uncut = () => {
           ></TinderLikeCard>
           <button onClick={onSwipe}>swipe</button>
         </div>
+        <div className="uk-margin-large uk-padding">
+          <h4 className="header-text">BRAND DESIGN</h4>
+        </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h4 className="header-text">MARKETING DESIGN</h4>
           <TinderLikeCard
             images={marketing}
             width="950"
@@ -82,10 +83,10 @@ const Uncut = () => {
             className="tinder"
           ></TinderLikeCard>
         </div>
+        <h4 className="header-text">MARKETING DESIGN</h4>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h4 className="header-text">GRAPHIC DESIGN</h4>
           <TinderLikeCard
             images={graphic}
             width="950"
@@ -95,6 +96,7 @@ const Uncut = () => {
             className="tinder"
           ></TinderLikeCard>
         </div>
+        <h4 className="header-text">GRAPHIC DESIGN</h4>
       </div>
       <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
     </div>
