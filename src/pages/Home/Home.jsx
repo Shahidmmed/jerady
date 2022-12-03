@@ -78,7 +78,7 @@ const Home = () => {
               <div className="uk-width-expand">
                 <div className="home-contact">
                   <h2 className="header-text">Need some help on a project</h2>
-                  <p>
+                  <p className="help-text">
                     Send an email if you would like to collaborate or have
                     questions about my work.
                   </p>

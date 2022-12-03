@@ -13,14 +13,19 @@ import signup from "../../assets/images/caseStudies/Spayces/signup.png";
 import finalDesign from "../../assets/images/caseStudies/Spayces/finalDesign.png";
 import { HashLink } from "react-router-hash-link";
 import "./Work.scss";
+import { selectedProjects } from "../../data/info";
+import { getImgUrl } from "../../data/functions";
+import { NavLink } from "react-router-dom";
 
 const Spayces = () => {
+  let nextprojects = selectedProjects.slice(2);
+
   return (
     <div>
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name">SPAYCES</h5>
-          <h1 className="header-text study-header">
+          <h1 className="header-text study-header orange-header">
             Reimagining the Restaurant Reservation Experience
           </h1>
           <p className="study-brief">
@@ -29,7 +34,10 @@ const Spayces = () => {
             location, contact details etc)and also gives users the option to
             pre-order meals ahead of any occasion.
           </p>
-          <div className="study-image" data-uk-lightbox="animation: fade">
+          <div
+            className="study-image uk-margin-large-top"
+            data-uk-lightbox="animation: fade"
+          >
             <a href={bannerimage}>
               <img src={bannerimage} alt="" />
               <span className="gray-overlay">
@@ -41,7 +49,7 @@ const Spayces = () => {
       </div>
       <div className="uk-section-large uk-container uk-padding-remove study-tab">
         <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
-          <ul data-uk-tab>
+          <ul data-uk-tab className="orange-tab">
             <li>
               <HashLink to="/casestudy/spayces#overview">OVERVIEW</HashLink>
             </li>
@@ -501,6 +509,38 @@ const Spayces = () => {
             themes to make it easier for me to focus on what priority changes
             were to be made.
           </p>
+        </div>
+      </div>
+      <div className="uk-section-large uk-container uk-padding-xlarge-bottom">
+        <div className="uk-margin-large uk-padding">
+          <h2 className="header-text nxt-header uk-margin-left">
+            Next Project
+          </h2>
+          <div className="next-cards">
+            <ul className="uk-child-width-1-2@s" data-uk-grid>
+              {nextprojects.map((project, index) => (
+                <li key={index} className="">
+                  <div
+                    className="uk-card uk-card-default next-card"
+                    style={{
+                      backgroundImage: `${getImgUrl(project.image)}`,
+                    }}
+                  >
+                    <img src={getImgUrl(project.image)} alt="" />
+                    <NavLink to={project.page}>
+                      <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
+                        {project.previewText}
+                        <span
+                          data-uk-icon="chevron-double-right"
+                          className="uk-position-bottom-right uk-padding-small"
+                        ></span>
+                      </div>
+                    </NavLink>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,8 @@ import { experience } from "../../data/info";
 import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
 import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
 import ellipse from "../../assets/images/Ellipse42.png";
+import im1 from "../../assets/images/im1.png";
+import im2 from "../../assets/images/im2.png";
 import "./About.scss";
 import { getImgUrl } from "../../data/functions";
 const gallery = import.meta.glob("../../assets/images/bookCovers/*.(png|jpg)");
@@ -33,13 +35,23 @@ const About = () => {
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h1 className="header-text">Young, Curious and Enthusiatic</h1>
-          <div className="image-cards"></div>
+          <div
+            className="uk-child-width-1-2@s uk-margin-top uk-padding-small"
+            data-uk-grid
+          >
+            <div className="image-cards">
+              <img src={im2} alt="" className="image2" />
+              <img src={im1} alt="" className="image1" />
+            </div>
+            <h1 className="header-text img-txt">
+              Young, Curious and Enthusiatic
+            </h1>
+          </div>
         </div>
       </div>
       <div className="uk-section-large uk-container">
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text about-text">
+          <h2 className="header-text about-header">
             I’m currently helping to lead, and mentor the Bethniel Finance team
             as Design Lead.
           </h2>
@@ -115,9 +127,12 @@ const About = () => {
               className="uk-child-width-1-2@s uk-margin-top uk-padding-small"
               data-uk-grid
             >
-              <div>
+              <a
+                href="https://music.apple.com/gh/playlist/eunoia/pl.u-yZyVqyVCYy6rBb7?ls"
+                target="_blank"
+              >
                 <img src={playlist1} alt="" className="music" />
-              </div>
+              </a>
               <div>
                 <h3 className="header-text">Eunoia</h3>
                 <p>A playlist curated by me on Apple Music</p>
@@ -131,9 +146,9 @@ const About = () => {
                 <h3 className="header-text">Cockaigne</h3>
                 <p>A playlist curated by me on Spotify</p>
               </div>
-              <div>
+              <a href="" target="_blank">
                 <img src={playlist2} alt="" className="music" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -149,7 +164,7 @@ const About = () => {
               <div className="uk-width-expand">
                 <div className="home-contact">
                   <h2 className="header-text">Need some help on a project</h2>
-                  <p>
+                  <p className="help-text">
                     Send an email if you would like to collaborate or have
                     questions about my work.
                   </p>

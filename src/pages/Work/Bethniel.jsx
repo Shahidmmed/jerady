@@ -5,8 +5,13 @@ import signup from "../../assets/images/caseStudies/BethnielFinance/showbethsign
 import home from "../../assets/images/caseStudies/BethnielFinance/showhomefirst.png";
 import onboarding from "../../assets/images/caseStudies/BethnielFinance/onboarding.png";
 import "./Work.scss";
+import { selectedProjects } from "../../data/info";
+import { NavLink } from "react-router-dom";
+import { getImgUrl } from "../../data/functions";
 
 const Bethniel = () => {
+  let nextprojects = selectedProjects.slice(1, 3);
+
   return (
     <div>
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
@@ -164,6 +169,38 @@ const Bethniel = () => {
           <h2 className="header-text">Final Screens</h2>
           <div></div>
           <div></div>
+        </div>
+      </div>
+      <div className="uk-section-large uk-container uk-padding-xlarge-bottom">
+        <div className="uk-margin-large uk-padding">
+          <h2 className="header-text nxt-header uk-margin-left">
+            Next Project
+          </h2>
+          <div className="next-cards">
+            <ul className="uk-child-width-1-2@s" data-uk-grid>
+              {nextprojects.map((project, index) => (
+                <li key={index} className="">
+                  <div
+                    className="uk-card uk-card-default next-card"
+                    style={{
+                      backgroundImage: `${getImgUrl(project.image)}`,
+                    }}
+                  >
+                    <img src={getImgUrl(project.image)} alt="" />
+                    <NavLink to={project.page}>
+                      <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
+                        {project.previewText}
+                        <span
+                          data-uk-icon="chevron-double-right"
+                          className="uk-position-bottom-right uk-padding-small"
+                        ></span>
+                      </div>
+                    </NavLink>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

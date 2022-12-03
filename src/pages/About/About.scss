@@ -11,8 +11,24 @@
 b {
   font-family: Cabin-Bold;
 }
-.about-text {
+.image-cards {
+  .image1 {
+    margin-top: -112px;
+    margin-left: 70px;
+  }
+}
+.img-txt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+  font-size: 64px;
+  margin-left: -100px;
+}
+.about-header {
   max-width: 635px;
+}
+.about-text {
+  max-width: 800px;
 }
 .experience ul li {
   list-style: none;

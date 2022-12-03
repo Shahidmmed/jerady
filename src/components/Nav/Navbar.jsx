@@ -99,7 +99,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="https://twitter.com/ayycalaiss"
-                  className="uk-margin-small-right social"
+                  className="uk-margin-right social"
                   target="_blank"
                 >
                   <img src={twitter} alt="" />
