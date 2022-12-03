@@ -67,7 +67,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
+      <div className="uk-section uk-container"></div>
       <div className="ellipse-section">
         <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
           <div className="uk-padding uk-padding-remove-bottom">

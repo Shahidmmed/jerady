@@ -13,8 +13,8 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-        <ScrollToTop />
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/casestudy/spayces" element={<Spayces />} />
