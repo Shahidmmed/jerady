@@ -2,10 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import sapphireCover from "../../assets/images/caseStudies/Sapphire/sapphireCover.png";
-import { getImgUrl } from "../../data/functions";
+import { getImgUrl, scrollToSection } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
 
 const Sapphire = () => {
+  const overview = useRef(null);
+  const voyage = useRef(null);
+  const ideation = useRef(null);
+  const designs = useRef(null);
+  const thoughts = useRef(null);
   let nextprojects = selectedProjects.slice(3);
 
   return (
@@ -34,23 +39,31 @@ const Sapphire = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
-          <ul data-uk-tab>
+          <ul data-uk-tab className="uk-padding-horizontal">
             <li>
-              <HashLink to="/casestudy/sapphire#overview">OVERVIEW</HashLink>
+              <a href="#" onClick={() => scrollToSection(overview)}>
+                OVERVIEW
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/sapphire#voyage">THE VOYAGE</HashLink>
+              <a href="#" onClick={() => scrollToSection(voyage)}>
+                THE VOYAGE
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/sapphire#ideation">IDEATION</HashLink>
+              <a href="#" onClick={() => scrollToSection(ideation)}>
+                IDEATION
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/sapphire#designs">DESIGNS</HashLink>
+              <a href="#" onClick={() => scrollToSection(designs)}>
+                DESIGNS
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/sapphire#thoughts">
+              <a href="#" onClick={() => scrollToSection(thoughts)}>
                 FINAL THOUGHTS
-              </HashLink>
+              </a>
             </li>
           </ul>
           <div></div>
@@ -68,7 +81,7 @@ const Sapphire = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" ref={overview}>
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import { HashLink } from "react-router-hash-link";
 import home from "../../assets/images/caseStudies/BethnielFinance/Home.png";
 import frame1 from "../../assets/images/caseStudies/BethnielFinance/Frame20252.png";
+import { scrollToSection } from "../../data/functions";
 
 const BethnielFinance = () => {
+  const overview = useRef(null);
+  const voyage = useRef(null);
+  const ideation = useRef(null);
+  const designs = useRef(null);
+  const thoughts = useRef(null);
+
   return (
     <div>
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
@@ -29,23 +36,31 @@ const BethnielFinance = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
-          <ul data-uk-tab>
+          <ul data-uk-tab className="uk-padding-horizontal">
             <li>
-              <HashLink to="/casestudy/bethnielfin#overview">OVERVIEW</HashLink>
+              <a href="#" onClick={() => scrollToSection(overview)}>
+                OVERVIEW
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethnielfin#voyage">THE VOYAGE</HashLink>
+              <a href="#" onClick={() => scrollToSection(voyage)}>
+                THE VOYAGE
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethnielfin#ideation">IDEATION</HashLink>
+              <a href="#" onClick={() => scrollToSection(ideation)}>
+                IDEATION
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethnielfin#designs">DESIGNS</HashLink>
+              <a href="#" onClick={() => scrollToSection(designs)}>
+                DESIGNS
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethnielfin#thoughts">
+              <a href="#" onClick={() => scrollToSection(thoughts)}>
                 FINAL THOUGHTS
-              </HashLink>
+              </a>
             </li>
           </ul>
           <div></div>
@@ -66,7 +81,11 @@ const BethnielFinance = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" id="overview">
+      <div
+        className="uk-section-large uk-container"
+        ref={overview}
+        id="overview"
+      >
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>

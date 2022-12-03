@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import bannerimage from "../../assets/images/caseStudies/Spayces/bannerimage.png";
 import frame1 from "../../assets/images/caseStudies/Spayces/Frame1.png";
 import frame2 from "../../assets/images/caseStudies/Spayces/newempathy.png";
@@ -14,10 +14,15 @@ import finalDesign from "../../assets/images/caseStudies/Spayces/finalDesign.png
 import { HashLink } from "react-router-hash-link";
 import "./Work.scss";
 import { selectedProjects } from "../../data/info";
-import { getImgUrl } from "../../data/functions";
+import { getImgUrl, scrollToSection } from "../../data/functions";
 import { NavLink } from "react-router-dom";
 
 const Spayces = () => {
+  const overview = useRef(null);
+  const voyage = useRef(null);
+  const ideation = useRef(null);
+  const designs = useRef(null);
+  const thoughts = useRef(null);
   let nextprojects = selectedProjects.slice(2);
 
   return (
@@ -49,26 +54,33 @@ const Spayces = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
-          <ul data-uk-tab className="orange-tab">
+          <ul data-uk-tab className="uk-padding-horizontal orange-tab">
             <li>
-              <HashLink to="/casestudy/spayces#overview">OVERVIEW</HashLink>
+              <a href="#" onClick={() => scrollToSection(overview)}>
+                OVERVIEW
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/spayces#voyage">THE VOYAGE</HashLink>
+              <a href="#" onClick={() => scrollToSection(voyage)}>
+                THE VOYAGE
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/spayces#ideation">IDEATION</HashLink>
+              <a href="#" onClick={() => scrollToSection(ideation)}>
+                IDEATION
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/spayces#designs">DESIGNS</HashLink>
+              <a href="#" onClick={() => scrollToSection(designs)}>
+                DESIGNS
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/spayces#thoughts">
+              <a href="#" onClick={() => scrollToSection(thoughts)}>
                 FINAL THOUGHTS
-              </HashLink>
+              </a>
             </li>
           </ul>
-
           <div></div>
         </div>
       </div>
@@ -83,7 +95,7 @@ const Spayces = () => {
             <p>Timeline: 29/03/2022-7/07/2022 </p>
           </div>
         </div>
-        <div className="uk-section uk-container">
+        <div className="uk-section uk-container" ref={overview}>
           <div className=" uk-margin-large uk-padding">
             <div className="uk-margin" id="overview">
               <h2 className="header-text">Overview</h2>
@@ -122,7 +134,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" id="voyage">
+      <div className="uk-section-large uk-container" ref={voyage} id="voyage">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">The Voyage</h2>
           <p>
@@ -504,7 +516,11 @@ const Spayces = () => {
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-large uk-container" id="thoughts">
+      <div
+        className="uk-section-large uk-container"
+        ref={thoughts}
+        id="thoughts"
+      >
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Final Thoughts</h2>
           <p>

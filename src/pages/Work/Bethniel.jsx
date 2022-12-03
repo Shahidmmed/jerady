@@ -7,10 +7,16 @@ import onboarding from "../../assets/images/caseStudies/BethnielFinance/onboardi
 import "./Work.scss";
 import { selectedProjects } from "../../data/info";
 import { NavLink } from "react-router-dom";
-import { getImgUrl } from "../../data/functions";
-import { Link } from "react-router-dom";
+import { getImgUrl, scrollToSection } from "../../data/functions";
+import { useRef } from "react";
 
 const Bethniel = () => {
+  const overview = useRef(null);
+  const voyage = useRef(null);
+  const ideation = useRef(null);
+  const designs = useRef(null);
+  const thoughts = useRef(null);
+
   let nextprojects = selectedProjects.slice(1, 3);
 
   return (
@@ -40,21 +46,29 @@ const Bethniel = () => {
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
-              <HashLink to="/casestudy/bethniel#overview">OVERVIEW</HashLink>
+              <a href="#" onClick={() => scrollToSection(overview)}>
+                OVERVIEW
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethniel#voyage">THE VOYAGE</HashLink>
+              <a href="#" onClick={() => scrollToSection(voyage)}>
+                THE VOYAGE
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethniel#ideation">IDEATION</HashLink>
+              <a href="#" onClick={() => scrollToSection(ideation)}>
+                IDEATION
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethniel#designs">DESIGNS</HashLink>
+              <a href="#" onClick={() => scrollToSection(designs)}>
+                DESIGNS
+              </a>
             </li>
             <li>
-              <HashLink to="/casestudy/bethniel#thoughts">
+              <a href="#" onClick={() => scrollToSection(thoughts)}>
                 FINAL THOUGHTS
-              </HashLink>
+              </a>
             </li>
           </ul>
           <div></div>
@@ -75,7 +89,11 @@ const Bethniel = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" id="overview">
+      <div
+        className="uk-section-large uk-container overview"
+        ref={overview}
+        id="overview"
+      >
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>
