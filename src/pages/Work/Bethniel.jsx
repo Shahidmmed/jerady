@@ -8,6 +8,7 @@ import "./Work.scss";
 import { selectedProjects } from "../../data/info";
 import { NavLink } from "react-router-dom";
 import { getImgUrl } from "../../data/functions";
+import { Link } from "react-router-dom";
 
 const Bethniel = () => {
   let nextprojects = selectedProjects.slice(1, 3);
@@ -35,9 +36,9 @@ const Bethniel = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove study-tab">
+      <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
-          <ul data-uk-tab>
+          <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <HashLink to="/casestudy/bethniel#overview">OVERVIEW</HashLink>
             </li>
@@ -59,7 +60,7 @@ const Bethniel = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container">
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>

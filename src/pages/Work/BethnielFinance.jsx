@@ -27,7 +27,7 @@ const BethnielFinance = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove study-tab">
+      <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab>
             <li>
@@ -51,7 +51,7 @@ const BethnielFinance = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container">
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>

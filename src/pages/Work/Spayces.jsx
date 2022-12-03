@@ -47,7 +47,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove study-tab">
+      <div className="uk-section-large uk-padding-remove study-tab">
         <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
           <ul data-uk-tab className="orange-tab">
             <li>
@@ -72,7 +72,7 @@ const Spayces = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container">
         <div className=" uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
@@ -82,26 +82,31 @@ const Spayces = () => {
             <p>Team: AJ Mensah, Naa Ayeley Ayettey, Daniel Olukoya </p>
             <p>Timeline: 29/03/2022-7/07/2022 </p>
           </div>
-          <div className="uk-margin" id="overview">
-            <h2 className="header-text">Overview</h2>
-            <p>
-              Spayces is a passion project birthed out of the need and
-              frustration of making quick and easy reservations at restaurants.
-              In Ghana, finding a centralized medium with restaurant menus and
-              making table reservations ahead is quite difficult for both locals
-              and foreigners alike.
-            </p>
-            <p>
-              By providing, reliable and accurate restaurant information
-              (personalized menus, prices, location, contact details etc), and
-              giving users the option to pre-order meals ahead of the occasion,
-              Spayces is meant to make going out to eat as simple and
-              stress-free as simple and stress-free can get.
-            </p>
-            <p>
-              How might we help curious users easily access accurate information
-              on restaurants, make reseravtions and pre-order meals seamlessly?
-            </p>
+        </div>
+        <div className="uk-section uk-container">
+          <div className=" uk-margin-large uk-padding">
+            <div className="uk-margin" id="overview">
+              <h2 className="header-text">Overview</h2>
+              <p>
+                Spayces is a passion project birthed out of the need and
+                frustration of making quick and easy reservations at
+                restaurants. In Ghana, finding a centralized medium with
+                restaurant menus and making table reservations ahead is quite
+                difficult for both locals and foreigners alike.
+              </p>
+              <p>
+                By providing, reliable and accurate restaurant information
+                (personalized menus, prices, location, contact details etc), and
+                giving users the option to pre-order meals ahead of the
+                occasion, Spayces is meant to make going out to eat as simple
+                and stress-free as simple and stress-free can get.
+              </p>
+              <p>
+                How might we help curious users easily access accurate
+                information on restaurants, make reseravtions and pre-order
+                meals seamlessly?
+              </p>
+            </div>
           </div>
         </div>
       </div>
