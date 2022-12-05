@@ -23,10 +23,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div
-        className="uk-section uk-container uk-margin-large-bottom"
-        id="projects"
-      >
+      <div className="uk-section uk-container uk-margin-bottom" id="projects">
         <div className="uk-padding">
           <div className=" uk-margin-large">
             <h2 className="header-text uk-margin-remove">Selected Projects</h2>

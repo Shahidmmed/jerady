@@ -9,7 +9,7 @@
   height: 430px;
 }
 .tinder {
-  margin: auto;
+  margin: auto !important;
   border-radius: 16px !important;
 }
 .tinder > div {
@@ -99,7 +99,14 @@
 }
 
 @media (max-width: 480px) {
+  .uncut-header {
+    margin-left: 0;
+    h3 {
+      margin-top: 20px;
+    }
+  }
   .tinder {
+    margin-left: -18px !important;
     width: 320px !important;
     height: 320px !important;
   }

@@ -88,3 +88,12 @@
   stroke: black !important;
   fill: white !important;
 }
+.left-nav {
+  margin-left: 4.5rem;
+}
+
+@media (max-width: 420px) {
+  .left-nav {
+    margin-left: 25px !important;
+  }
+}

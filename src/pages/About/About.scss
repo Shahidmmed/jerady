@@ -20,15 +20,15 @@ b {
 .img-txt {
   display: flex;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 340px !important;
   font-size: 64px;
-  margin-left: -100px;
+  margin-left: -80px !important;
 }
 .about-header {
   max-width: 635px;
 }
 .about-text {
-  max-width: 800px;
+  max-width: 635px;
 }
 .experience ul li {
   list-style: none;
@@ -47,4 +47,37 @@ b {
   width: 320px;
   border: #2d2a2a solid 1px;
   border-radius: 5px;
+}
+
+@media (max-width: 420px) {
+  .books {
+    margin-left: 0px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .about-header {
+    font-size: 1.6rem !important;
+  }
+  .book {
+    padding-left: 0 !important;
+    padding-right: 10px;
+  }
+  .book-card {
+    height: 180px;
+    width: 120px;
+  }
+  .image-cards {
+    margin-left: -25px !important;
+  }
+  .img-txt {
+    margin-bottom: 0 !important;
+    font-size: 2.2rem;
+    margin-left: 0 !important;
+  }
+  .music {
+    height: 190px;
+    width: 280px;
+  }
 }

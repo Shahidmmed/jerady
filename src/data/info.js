@@ -4,7 +4,7 @@ export const experience = [
     work: "Lead Product Designer at Bethniel Fintech",
   },
   {
-    year: "2020 - Current",
+    year: "2021 -2022",
     work: "User Experience Designer at Hexkode",
   },
   {

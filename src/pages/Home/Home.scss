@@ -20,7 +20,7 @@ small {
   }
   .work-card {
     border-radius: 15px;
-    min-height: 650px;
+    height: 650px;
     overflow: hidden;
     img {
       object-fit: cover;
@@ -71,7 +71,10 @@ small {
   }
   .work-cards {
     .work-card {
-      min-height: 240px;
+      height: 285px !important;
+    }
+    .previewText {
+      width: 210px;
     }
     li:nth-child(2) {
       margin-top: 30px !important;

@@ -24,8 +24,8 @@ const Navbar = () => {
       data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
     >
       <nav className="uk-navbar-container uk-navbar-transparent uk-navbar nav-section">
-        <div className="uk-navbar-left uk-margin-large-left">
-          <ul className="uk-navbar-nav left-nav">
+        <div className="uk-navbar-left left-nav">
+          <ul className="uk-navbar-nav">
             <li>
               <Link className="uk-navbar-item logo" to="/">
                 <img src={logo} alt="logo" />

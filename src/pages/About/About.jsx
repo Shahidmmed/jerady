@@ -101,7 +101,7 @@ const About = () => {
             Some books I have read
           </h2>
           <div
-            className="uk-child-width-1-4@s uk-margin-top uk-padding-small"
+            className="uk-child-width-1-4@s uk-margin-top uk-padding-small books"
             data-uk-grid
           >
             {bookCovers &&
@@ -153,7 +153,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
       <div className="ellipse-section">
         <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
           <div className="uk-padding uk-padding-remove-bottom">
