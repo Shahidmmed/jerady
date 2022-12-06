@@ -50,34 +50,82 @@ b {
 }
 
 @media (max-width: 420px) {
+  .year {
+    font-size: 12px;
+  }
+  .work {
+    font-size: 14px;
+  }
+  .first-section {
+    padding-bottom: 0px !important;
+  }
+  .books-section {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .image-cards {
+    margin-left: -25px !important;
+    .image2 {
+      width: 130px;
+    }
+    .image1 {
+      width: 165px;
+      margin-top: -33px;
+      margin-left: 60px;
+    }
+  }
   .books {
     margin-left: 0px !important;
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2px;
     grid-auto-rows: minmax(100px, auto);
+    padding: 0px !important;
   }
   .about-header {
-    font-size: 1.6rem !important;
+    font-size: 1.2rem !important;
   }
   .book {
     padding-left: 0 !important;
     padding-right: 10px;
+    margin-top: 10px !important;
   }
   .book-card {
-    height: 180px;
+    height: 135px;
     width: 120px;
   }
-  .image-cards {
-    margin-left: -25px !important;
+  .img-grid {
+    flex-wrap: nowrap !important;
+    margin: auto !important;
+    padding: 0px !important;
   }
   .img-txt {
-    margin-bottom: 0 !important;
-    font-size: 2.2rem;
-    margin-left: 0 !important;
+    margin-bottom: 90px !important;
+    font-size: 24px;
+    margin-left: -20px !important;
+  }
+  .playlist1 {
+    padding: 0px !important;
+  }
+  .playlist2 {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 35%;
+  }
+  .music-text {
+    margin-top: 20px !important;
+    h3 {
+      margin-bottom: 5px !important;
+    }
+    p {
+      margin-top: 0px !important;
+      width: 214px;
+    }
   }
   .music {
-    height: 190px;
-    width: 280px;
+    height: 185px;
+    width: 185px;
+    border-radius: 12px;
   }
 }

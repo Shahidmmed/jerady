@@ -39,6 +39,8 @@ span.gray-overlay {
   justify-content: space-between;
   padding-left: 80px !important;
   padding-right: 80px !important;
+  margin-left: 35px !important;
+  margin-right: 57px !important;
 }
 .uk-tab > .uk-active > a {
   border-color: transparent !important;
@@ -110,4 +112,11 @@ span.gray-overlay {
 }
 .nxt-header {
   color: #969696 !important;
+}
+
+@media (max-width: 420px) {
+  .study-tab,
+  .next-section {
+    display: none !important;
+  }
 }

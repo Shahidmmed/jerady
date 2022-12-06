@@ -40,24 +40,28 @@ export const selectedProjects = [
     previewText: "Shaping and improving the future of personal finance",
     image: "caseStudies/BethnielFinance/projectTile.png",
     page: "/casestudy/bethniel",
+    type: "UI/UX Design",
   },
   {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
     image: "caseStudies/Spayces/spaycescover1.jpg",
     page: "/casestudy/spayces",
+    type: "UI/UX Design",
   },
   {
     name: "Sapphire",
     previewText: "Powering the Modern Fuel Supply Experience",
-    image: "caseStudies/Sapphire/sapphireCover1.png",
+    image: "caseStudies/Sapphire/SAPP.png",
     page: "/casestudy/sapphire",
+    type: "UI/UX Design",
   },
   {
     name: "Bethniel Finance",
     previewText: "Designing a dashboard for personal finance experts",
-    image: "caseStudies/BethnielFinance/Default1.png",
+    image: "caseStudies/BethnielFinance/Default.png",
     page: "/casestudy/bethnielfin",
+    type: "UI/UX Design",
   },
 ];
 const caseStudies = [

@@ -11,7 +11,6 @@ import frame10 from "../../assets/images/caseStudies/Spayces/wireframes.png";
 import onboarding from "../../assets/images/caseStudies/Spayces/onboarding.png";
 import signup from "../../assets/images/caseStudies/Spayces/signup.png";
 import finalDesign from "../../assets/images/caseStudies/Spayces/finalDesign.png";
-import { HashLink } from "react-router-hash-link";
 import "./Work.scss";
 import { selectedProjects } from "../../data/info";
 import { getImgUrl, scrollToSection } from "../../data/functions";
@@ -53,7 +52,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className=" uk-margin-large uk-padding uk-padding-remove-horizontal">
+        <div className=" uk-margin-large uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal orange-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -62,12 +61,12 @@ const Spayces = () => {
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(voyage)}>
-                THE VOYAGE
+                POKING & PRYING
               </a>
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(ideation)}>
-                IDEATION
+                IDEATION & TESTING
               </a>
             </li>
             <li>
@@ -134,7 +133,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" ref={voyage} id="voyage">
+      <div className="uk-section-large uk-container" id="voyage">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">The Voyage</h2>
           <p>
@@ -166,7 +165,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" ref={voyage}>
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Poking & Prying</h2>
           <p>
@@ -302,9 +301,9 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container" ref={ideation}>
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text">The Voyage</h2>
+          <h2 className="header-text">Ideation</h2>
           <p>DRUMMING UP FEATURE IDEAS</p>
           <p>
             To move to the next stage of the voyage, we had to brainstorm on
@@ -317,9 +316,13 @@ const Spayces = () => {
             development.
           </p>
           <div>
-            <button className="uk-button uk-button-default jerday-btn">
+            <a
+              className="uk-button uk-button-default jerday-btn"
+              href="https://airtable.com/shrqrkBudcH1uyian/tbl7iI8A8CPbrXe2L"
+              target="_blank"
+            >
               View Product Roadmap
-            </button>
+            </a>
           </div>
           <p>INFORMATION ARCHITECTURE & USER FLOW</p>
           <p>
@@ -532,7 +535,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-bottom">
+      <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text nxt-header uk-margin-left">
             Next Project

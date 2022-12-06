@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import sapphireCover from "../../assets/images/caseStudies/Sapphire/sapphireCover.png";
 import { getImgUrl, scrollToSection } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
@@ -38,7 +37,7 @@ const Sapphire = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
+        <div className="uk-margin-large uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -118,7 +117,7 @@ const Sapphire = () => {
         </div>
       </div>
 
-      <div className="uk-section-large uk-container uk-padding-xlarge-bottom">
+      <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text nxt-header uk-margin-left">
             Next Project

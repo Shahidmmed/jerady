@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 import bethCover from "../../assets/images/caseStudies/BethnielFinance/projectdetailscover.png";
 import signup from "../../assets/images/caseStudies/BethnielFinance/showbethsign.png";
 import home from "../../assets/images/caseStudies/BethnielFinance/showhomefirst.png";
@@ -43,7 +42,7 @@ const Bethniel = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
+        <div className="uk-margin-large uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -190,7 +189,7 @@ const Bethniel = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-bottom">
+      <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text nxt-header uk-margin-left">
             Next Project

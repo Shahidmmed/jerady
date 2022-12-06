@@ -20,7 +20,7 @@ small {
   }
   .work-card {
     border-radius: 15px;
-    height: 650px;
+    min-height: 650px;
     overflow: hidden;
     img {
       object-fit: cover;
@@ -40,7 +40,9 @@ small {
     color: black;
   }
 }
-
+.projectType {
+  display: none;
+}
 .home-card {
   border-radius: 15px;
   min-height: 390px;
@@ -71,10 +73,28 @@ small {
   }
   .work-cards {
     .work-card {
-      height: 285px !important;
+      min-height: 285px !important;
+      display: inline-block !important;
+      box-shadow: none !important;
+      img {
+        border-radius: 15px;
+        max-height: 214px !important;
+        width: 284.5px !important;
+      }
     }
     .previewText {
       width: 210px;
+      background-color: #fff;
+      border-radius: 0%;
+      box-shadow: none !important;
+      left: 0%;
+      bottom: 0%;
+      position: relative;
+      padding-top: 10px;
+      padding-left: 0px;
+      span {
+        display: none;
+      }
     }
     li:nth-child(2) {
       margin-top: 30px !important;
@@ -85,5 +105,9 @@ small {
     li:nth-child(4) {
       margin-top: 30px !important;
     }
+  }
+  .projectType {
+    display: block;
+    color: #5c5c5c;
   }
 }

@@ -39,16 +39,19 @@ const Home = () => {
                     key={index}
                     className={index % 2 !== 0 ? "uk-margin-large-top" : ""}
                   >
-                    <div
-                      className={
-                        index % 2 !== 0
-                          ? "uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uk-margin-top work-card"
-                          : "uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle work-card"
-                      }
-                      style={{ backgroundImage: `${getImgUrl(project.image)}` }}
-                    >
-                      <img src={getImgUrl(project.image)} alt="" />
-                      <NavLink to={project.page}>
+                    <NavLink to={project.page}>
+                      <div
+                        className={
+                          index % 2 !== 0
+                            ? "uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uk-margin-top work-card"
+                            : "uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle work-card"
+                        }
+                        style={{
+                          backgroundImage: `${getImgUrl(project.image)}`,
+                        }}
+                      >
+                        <img src={getImgUrl(project.image)} alt="" />
+
                         <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
                           {project.previewText}
                           <span
@@ -56,8 +59,12 @@ const Home = () => {
                             className="uk-position-bottom-right uk-padding-small"
                           ></span>
                         </div>
-                      </NavLink>
-                    </div>
+
+                        <p className="uk-margin-remove projectType">
+                          {project.type}
+                        </p>
+                      </div>
+                    </NavLink>
                   </li>
                 ))}
             </ul>

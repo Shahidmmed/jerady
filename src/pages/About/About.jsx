@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container first-section">
         <div className=" uk-margin-large uk-padding">
           <h1 className="header-text">About Me</h1>
           <p className="about-text">
@@ -33,10 +33,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container books-section">
         <div className=" uk-margin-large uk-padding">
           <div
-            className="uk-child-width-1-2@s uk-margin-top uk-padding-small"
+            className="uk-child-width-1-2@s uk-margin-top uk-padding-small img-grid"
             data-uk-grid
           >
             <div className="image-cards">
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container books-section">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text about-header">
             I’m currently helping to lead, and mentor the Bethniel Finance team
@@ -70,9 +70,11 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container books-section">
         <div className="uk-margin-large uk-padding">
-          <h2 className="header-text uk-margin-medium-bottom">Experience</h2>
+          <h2 className="header-text uk-margin-medium-bottom about-header">
+            Experience
+          </h2>
           <div className="uk-child-width-expand@s experience">
             <ul className="uk-padding-remove">
               {experience &&
@@ -86,7 +88,7 @@ const About = () => {
           </div>
           <div className="uk-margin-large-top">
             <a
-              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dd7ebeab-278c-46ba-84f7-c834ba92fd9e"
+              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:58f3aae5-2280-47ee-a358-4688990d1e6e"
               className="uk-button uk-button-default jerday-btn"
             >
               Download my resume
@@ -95,9 +97,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container books-section">
         <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text uk-margin-large-bottom">
+          <h2 className="header-text uk-margin-large-bottom about-header">
             Some books I have read
           </h2>
           <div
@@ -117,14 +119,14 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container books-section">
         <div className=" uk-margin-large uk-padding">
-          <h1 className="header-text uk-margin-large-bottom">
+          <h1 className="header-text uk-margin-large-bottom about-header">
             What I’m listening to right now
           </h1>
-          <div className="uk-width-3-4">
+          <div className="uk-width-3-4@s">
             <div
-              className="uk-child-width-1-2@s uk-margin-top uk-padding-small"
+              className="uk-child-width-1-2@s uk-margin-top uk-padding-small playlist1"
               data-uk-grid
             >
               <a
@@ -133,16 +135,16 @@ const About = () => {
               >
                 <img src={playlist1} alt="" className="music" />
               </a>
-              <div>
+              <div className="music-text">
                 <h3 className="header-text">Eunoia</h3>
                 <p>A playlist curated by me on Apple Music</p>
               </div>
             </div>
             <div
-              className="uk-child-width-1-2@s uk-margin-medium-top uk-padding-small"
+              className="uk-child-width-1-2@s uk-margin-medium-top uk-padding-small playlist2"
               data-uk-grid
             >
-              <div>
+              <div className="music-text">
                 <h3 className="header-text">Cockaigne</h3>
                 <p>A playlist curated by me on Spotify</p>
               </div>

@@ -35,7 +35,7 @@ const BethnielFinance = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding uk-padding-remove-horizontal">
+        <div className="uk-margin-large uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
