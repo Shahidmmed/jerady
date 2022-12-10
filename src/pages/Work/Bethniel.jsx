@@ -59,7 +59,7 @@ const Bethniel = () => {
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(designs)}>
-                DESIGNS
+                DESIGNS & TESTING
               </a>
             </li>
             <li>

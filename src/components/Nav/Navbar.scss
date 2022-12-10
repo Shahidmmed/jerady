@@ -1,9 +1,7 @@
 .top-nav {
-  background-color: #fff;
-  /* box-shadow: 0 10px 10px -12px rgb(56 56 56 / 16%); */
   font-family: Cabin;
+  background-color: #fff;
   .nav-section {
-    background-color: #fff;
     padding: 6px;
     .logo {
       padding: 0;
@@ -89,7 +87,10 @@
   fill: white !important;
 }
 .left-nav {
-  margin-left: 4.5rem;
+  margin-left: 120px;
+}
+.right-nav {
+  margin-right: 120px;
 }
 
 @media (max-width: 420px) {

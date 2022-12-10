@@ -11,17 +11,19 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding">
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>
           <h1 className="header-text">Design Rocks My World</h1>
           <p className="summary">
             My superpower lies in my ability to combine form and function,
-            resulting in visually appealing and functional designs. My creative
-            process is centered around identifying unmet needs and developing
-            user-centered and data-informed solutions that deliver user and
-            business value.
+            resulting in visually appealing and functional designs.
+          </p>
+          <p className="summary">
+            My creative process is centered around identifying unmet needs and
+            developing user-centered and data-informed solutions that deliver
+            user and business value.
           </p>
         </div>
       </div>
@@ -39,7 +41,11 @@ const Home = () => {
                 selectedProjects.map((project, index) => (
                   <li
                     key={index}
-                    className={index % 2 !== 0 ? "uk-margin-large-top" : ""}
+                    className={
+                      index % 2 !== 0
+                        ? "uk-margin-large-top work-list"
+                        : "work-list"
+                    }
                   >
                     <NavLink to={project.page}>
                       <div

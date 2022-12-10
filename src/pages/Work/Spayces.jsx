@@ -57,7 +57,7 @@ const Spayces = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-padding">
-          <ul data-uk-tab className="uk-padding-horizontal orange-tab">
+          <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
                 OVERVIEW
@@ -65,17 +65,17 @@ const Spayces = () => {
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(voyage)}>
-                POKING & PRYING
+                THE VOYAGE
               </a>
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(ideation)}>
-                IDEATION & TESTING
+                IDEATION
               </a>
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(designs)}>
-                DESIGNS
+                DESIGNS & TESTING
               </a>
             </li>
             <li>
@@ -218,7 +218,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-vertical">
+      <div className="uk-section-large uk-container uk-padding uk-padding-remove-bottom">
         <div className="uk-padding">
           The survey armed us with insights and the face- to face user
           interviews gave us further understanding of our users’ needs and
@@ -238,11 +238,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding"></div>
+      <div className="uk-section-large uk-container uk-padding-xlarge">
+        <div className="uk-margin-large uk-padding-large"></div>
       </div>
-      <div className="uk-section uk-container">
-        <div className="uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-small">
+        <div className="uk-padding uk-padding-remove-bottom uk-margin-bottom">
           To help define the problem and come up with an appropriate problem
           statement, I synthesized the information gathered from the user
           interviews and then created an empathy map based on our findings. This
@@ -263,11 +263,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding"></div>
+      <div className="uk-section-large uk-container uk-padding-xlarge">
+        <div className="uk-margin-large uk-padding-large"></div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-bottom">
-        <div className=" uk-margin uk-padding">
+      <div className="uk-section uk-container uk-padding-small">
+        <div className="uk-padding uk-padding-remove-bottom">
           In order to move forward, we needed to learn what the recurring
           patterns and similarities in our findings were. To do that, I quickly
           created an affinity diagram to group user pain points by themes. The
@@ -277,8 +277,8 @@ const Spayces = () => {
           and help narrow our focus in order to take the next step.
         </div>
       </div>
-      <div className="uk-section uk-container uk-padding-remove-bottom">
-        <div className="uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame6}>
               <img src={frame6} alt="" />
@@ -299,8 +299,8 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section uk-container uk-padding-remove-horizontal">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-bottom">
+        <div className="uk-margin-large uk-padding uk-padding-remove-bottom">
           <p>POINT OF VIEW</p>
           <p>
             They say a challenge well framed is a challenge half solved and with
@@ -312,7 +312,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame7}>
               <img src={frame7} alt="" />
@@ -327,7 +327,7 @@ const Spayces = () => {
         className="uk-section-xlarge uk-container uk-padding-remove-bottom"
         ref={ideation}
       >
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-margin-large uk-padding uk-padding-remove-bottom">
           <h2 className="header-text">Ideation</h2>
           <p>DRUMMING UP FEATURE IDEAS</p>
           <p>
@@ -359,7 +359,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-xlarge uk-container uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame8}>
               <img src={frame8} alt="" />
@@ -374,7 +374,7 @@ const Spayces = () => {
         <div className=""></div>
       </div>
       <div className="uk-section-xlarge uk-container uk-padding-remove-vertical">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-bottom">
           <p>User Flow</p>
           <p>
             To visualize the overall journey my user would be taking throughout
@@ -386,7 +386,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={userflow}>
               <img src={userflow} alt="" />
@@ -401,7 +401,7 @@ const Spayces = () => {
         <div className=""></div>
       </div>
       <div className="uk-section uk-container uk-padding-remove-bottom">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-bottom">
           <p>NOSES TO THE GRINDSTONE</p>
           <p>
             With a deep understanding of our user, their goals, the
@@ -416,7 +416,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove-top uk-container">
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame10}>
               <img src={frame10} alt="" />
@@ -431,7 +431,7 @@ const Spayces = () => {
         <div className="uk-margin-large uk-padding"></div>
       </div>
       <div className="uk-section-xlarge uk-padding-remove-bottom uk-container">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-bottom">
           <p>
             Before working on the visual design, I had to ensure that the design
             was functional. In order to do this, I created a mid-fidelity
@@ -449,7 +449,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-container uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={prototype}>
               <img src={prototype} alt="" />

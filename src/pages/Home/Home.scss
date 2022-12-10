@@ -1,3 +1,7 @@
+.home:has(.work-list:nth-child(1):hover) {
+  background-color: #1e87f0;
+}
+
 small {
   span:after {
     background-color: #040404;
@@ -22,11 +26,16 @@ small {
     border-radius: 15px;
     min-height: 650px;
     overflow: hidden;
+    pointer-events: auto;
+    transition: all 0.2s ease-in-out;
     img {
       object-fit: cover;
       min-height: inherit;
       min-width: inherit;
     }
+  }
+  .work-card:hover {
+    transform: scale(1.1);
   }
   .previewText {
     position: absolute;

@@ -17,6 +17,39 @@
 
 body {
   font-family: Cabin;
+  background-color: #fff;
+}
+
+body:has(.work-list:nth-child(1):hover) {
+  background-color: #1e87f0;
+}
+
+body:has(.work-list:nth-child(1):hover) .top-nav {
+  background-color: #1e87f0 !important;
+}
+
+body:has(.work-list:nth-child(2):hover) {
+  background-color: #ec4628;
+}
+
+body:has(.work-list:nth-child(2):hover) .top-nav {
+  background-color: #ec4628 !important;
+}
+
+body:has(.work-list:nth-child(3):hover) {
+  background-color: #6a71e8;
+}
+
+body:has(.work-list:nth-child(3):hover) .top-nav {
+  background-color: #6a71e8 !important;
+}
+
+body:has(.work-list:nth-child(4):hover) {
+  background-color: #c5e2f4;
+}
+
+body:has(.work-list:nth-child(4):hover) .top-nav {
+  background-color: #c5e2f4 !important;
 }
 
 a {

@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="uk-navbar-right uk-margin-large-right">
+        <div className="uk-navbar-right right-nav">
           <button
             aria-controls="primary-nav"
             aria-expanded="false"

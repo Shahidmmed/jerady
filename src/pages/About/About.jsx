@@ -33,8 +33,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container books-section">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container books-section uk-padding-remove-top">
+        <div className="uk-padding">
           <div
             className="uk-child-width-1-2@s uk-margin-top uk-padding-small img-grid"
             data-uk-grid
@@ -49,8 +49,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container books-section">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container books-section">
+        <div className="uk-padding">
           <h2 className="header-text about-header">
             I’m currently helping to lead, and mentor the Bethniel Finance team
             as Design Lead.
@@ -70,8 +70,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container books-section">
-        <div className="uk-margin-large uk-padding">
+      <div className="uk-section uk-container books-section uk-padding-remove-top">
+        <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text uk-margin-medium-bottom about-header">
             Experience
           </h2>
@@ -98,8 +98,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="uk-section-large uk-container books-section">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container books-section">
+        <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text uk-margin-large-bottom about-header">
             Some books I have read
           </h2>
@@ -120,8 +120,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container books-section">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container books-section">
+        <div className=" uk-padding">
           <h1 className="header-text uk-margin-large-bottom about-header">
             What I’m listening to right now
           </h1>
