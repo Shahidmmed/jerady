@@ -17,9 +17,11 @@ const Home = () => {
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>
           <h1 className="header-text">Design Rocks My World</h1>
           <p className="summary">
-            and I am particularly obsessed with and experienced in crafting
-            useful, delightful and impactful experiences that align with
-            business success by bridging the gap between people and products.
+            My superpower lies in my ability to combine form and function,
+            resulting in visually appealing and functional designs. My creative
+            process is centered around identifying unmet needs and developing
+            user-centered and data-informed solutions that deliver user and
+            business value.
           </p>
         </div>
       </div>

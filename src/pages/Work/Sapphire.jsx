@@ -37,7 +37,7 @@ const Sapphire = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -68,7 +68,7 @@ const Sapphire = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section uk-container">
+      <div className="uk-section uk-container uk-padding-remove-top">
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
@@ -80,21 +80,13 @@ const Sapphire = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" ref={overview}>
-        <div className=" uk-margin-large uk-padding">
+      <div
+        className="uk-section uk-container uk-padding-remove-top overview"
+        ref={overview}
+        id="overview"
+      >
+        <div className="uk-padding">
           <h2 className="header-text">Overview</h2>
-          <p>
-            As part of its grand vision to thrive amidst growing competition and
-            to establish itself as the all-in-one platform for stakeholders to
-            manage their personal finance needs, the Fintech Startup contracted
-            me to do a design overhaul of the Betnhiel Finance mobile app.
-          </p>
-          <p>
-            Over the last few months at Bethniel I've led the team to (re)design
-            viable multi-platform products that materialised business goals of
-            increasing customer adoption rates by 30% and increased revenue by
-            as much as 2x, helping the company to stay ahead of the curve.
-          </p>
         </div>
       </div>
       <div className="uk-section-large uk-container">

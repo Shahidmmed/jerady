@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { experience } from "../../data/info";
+import { experience, links } from "../../data/info";
 import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
 import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
 import ellipse from "../../assets/images/Ellipse42.png";
@@ -27,9 +27,9 @@ const About = () => {
           <p className="about-text">
             I am an Experience Designer with a <b>Graphic Design</b>,
             <b> Research</b> and <b>Creative Writing</b> background who tries
-            not to take herself seriously. When I'm not contributing to solving
-            business and user problems, I'm sometimes spotted in a cozy studio
-            making music, reading, writing or playing word games.
+            not to take herself too seriously. When I'm not contributing to
+            solving business and user problems, I'm sometimes spotted in a cozy
+            studio making music, reading, writing or playing word games.
           </p>
         </div>
       </div>
@@ -88,7 +88,8 @@ const About = () => {
           </div>
           <div className="uk-margin-large-top">
             <a
-              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:58f3aae5-2280-47ee-a358-4688990d1e6e"
+              href={links.resume}
+              target="_blank"
               className="uk-button uk-button-default jerday-btn"
             >
               Download my resume

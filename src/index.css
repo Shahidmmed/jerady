@@ -52,6 +52,7 @@ h2 {
   position: fixed;
   bottom: 15px;
   right: 20px;
+  z-index: 999;
 }
 
 .top-btn-style {

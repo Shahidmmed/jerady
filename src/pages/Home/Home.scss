@@ -67,17 +67,20 @@ small {
   max-width: 420px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .ellipse-section {
     display: none !important;
   }
   .work-cards {
     .work-card {
+      margin-top: 0px !important;
+      min-width: 324px !important;
       min-height: 285px !important;
       display: inline-block !important;
       box-shadow: none !important;
+      border-radius: 6px !important;
       img {
-        border-radius: 15px;
+        border-radius: 6px;
         max-height: 214px !important;
         width: 284.5px !important;
       }
@@ -109,5 +112,18 @@ small {
   .projectType {
     display: block;
     color: #5c5c5c;
+  }
+  small {
+    span:after {
+      width: 42%;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .work-cards {
+    .work-card {
+      min-width: 284.5px !important;
+    }
   }
 }

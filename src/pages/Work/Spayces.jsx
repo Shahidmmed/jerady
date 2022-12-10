@@ -5,9 +5,13 @@ import frame2 from "../../assets/images/caseStudies/Spayces/newempathy.png";
 import frame3 from "../../assets/images/caseStudies/Spayces/frame3.png";
 import frame4 from "../../assets/images/caseStudies/Spayces/personas.png";
 import frame5 from "../../assets/images/caseStudies/Spayces/empathymap.png";
+import frame6 from "../../assets/images/caseStudies/Spayces/inaccurateinfo.png";
+import frame9 from "../../assets/images/caseStudies/Spayces/poorreserve.png";
 import frame7 from "../../assets/images/caseStudies/Spayces/pov.png";
 import frame8 from "../../assets/images/caseStudies/Spayces/arch.png";
 import frame10 from "../../assets/images/caseStudies/Spayces/wireframes.png";
+import userflow from "../../assets/images/caseStudies/Spayces/userflow.png";
+import prototype from "../../assets/images/caseStudies/Spayces/fidelityprototype.png";
 import onboarding from "../../assets/images/caseStudies/Spayces/onboarding.png";
 import signup from "../../assets/images/caseStudies/Spayces/signup.png";
 import finalDesign from "../../assets/images/caseStudies/Spayces/finalDesign.png";
@@ -52,7 +56,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className=" uk-margin-large uk-padding">
+        <div className="uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal orange-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -83,8 +87,8 @@ const Spayces = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-top">
+        <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
               Role: UX Design, User Research, Prototyping, Usability Testing.
@@ -94,30 +98,43 @@ const Spayces = () => {
             <p>Timeline: 29/03/2022-7/07/2022 </p>
           </div>
         </div>
-        <div className="uk-section uk-container" ref={overview}>
-          <div className=" uk-margin-large uk-padding">
-            <div className="uk-margin" id="overview">
-              <h2 className="header-text">Overview</h2>
-              <p>
-                Spayces is a passion project birthed out of the need and
-                frustration of making quick and easy reservations at
-                restaurants. In Ghana, finding a centralized medium with
-                restaurant menus and making table reservations ahead is quite
-                difficult for both locals and foreigners alike.
-              </p>
-              <p>
-                By providing, reliable and accurate restaurant information
-                (personalized menus, prices, location, contact details etc), and
-                giving users the option to pre-order meals ahead of the
-                occasion, Spayces is meant to make going out to eat as simple
-                and stress-free as simple and stress-free can get.
-              </p>
-              <p>
-                How might we help curious users easily access accurate
-                information on restaurants, make reseravtions and pre-order
-                meals seamlessly?
-              </p>
-            </div>
+        <div
+          className="uk-section uk-container uk-padding-remove overview"
+          ref={overview}
+          id="overview"
+        >
+          <div className="uk-padding">
+            <h2 className="header-text">Overview</h2>
+            <p>
+              Spayces is a passion project birthed out of the need and
+              frustration of making quick and easy reservations at restaurants.
+              During the timeline of the project, I designed the Onboarding,
+              Home Page, Restaurant Details and Reservation flow. ‍
+            </p>
+            <p>
+              By providing, reliable and accurate restaurant information
+              (personalized menus, prices, location, contact details etc), and
+              giving users the option to pre-order meals ahead of the occasion,
+              Spayces is meant to make going out to eat as simple and
+              stress-free as simple and stress-free can get.
+            </p>
+            <p>
+              How might we help curious users easily access accurate information
+              on restaurants, make reseravtions and pre-order meals seamlessly?
+            </p>
+          </div>
+          <div className="uk-padding">
+            <h2 className="header-text">The Challenge</h2>
+            <p>
+              In Ghana, people mostly get around by word of mouth, and usually,
+              that comes with its own set of challenges. Finding a centralized
+              medium with restaurant menus and making table reservations ahead
+              is quite difficult for both locals and foreigners alike.
+            </p>
+            <h4>
+              How might we help curious users easily access accurate information
+              on restaurants, make reseravtions and pre-order meals seamlessly ?
+            </h4>
           </div>
         </div>
       </div>
@@ -133,8 +150,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" id="voyage">
-        <div className=" uk-margin-large uk-padding">
+      <div
+        className="uk-section uk-container uk-padding-remove-vertical"
+        id="voyage"
+      >
+        <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text">The Voyage</h2>
           <p>
             Originally named Resto, we (a team of 2 designers and a full-stack
@@ -165,8 +185,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" ref={voyage}>
-        <div className=" uk-margin-large uk-padding">
+      <div
+        className="uk-section uk-container uk-padding-remove-vertical"
+        ref={voyage}
+      >
+        <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text">Poking & Prying</h2>
           <p>
             My starting point in the process was talking to users to gain
@@ -194,9 +217,11 @@ const Spayces = () => {
           </p>
         </div>
       </div>
+      <h4 className="header-text uk-margin-large-left">
+        Key Insights from Survey
+      </h4>
       <div className="uk-section-large uk-padding-remove-vertical image-block">
-        <div className=" uk-margin-large uk-padding">
-          <h4 className="header-text">Key Insights from Survey</h4>
+        <div className="uk-margin uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame3}>
               <img src={frame3} alt="" />
@@ -207,8 +232,8 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section-large uk-padding-remove-vertical">
+        <div className="uk-padding">
           The survey armed us with insights and the face- to face user
           interviews gave us further understanding of our users’ needs and
           empathy for their preferences, thoughts and feelings. This helped us
@@ -216,7 +241,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame4} className="long-container">
               <img src={frame4} alt="" className="long-image" />
@@ -230,8 +255,8 @@ const Spayces = () => {
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container">
+        <div className="uk-margin-large uk-padding">
           To help define the problem and come up with an appropriate problem
           statement, I synthesized the information gathered from the user
           interviews and then created an empathy map based on our findings. This
@@ -241,7 +266,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section-xlarge uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame5} className="long-container">
               <img src={frame5} alt="" className="xlong-image" />
@@ -255,8 +280,8 @@ const Spayces = () => {
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section-large uk-container uk-padding-remove-bottom">
+        <div className=" uk-margin uk-padding">
           In order to move forward, we needed to learn what the recurring
           patterns and similarities in our findings were. To do that, I quickly
           created an affinity diagram to group user pain points by themes. The
@@ -266,18 +291,29 @@ const Spayces = () => {
           and help narrow our focus in order to take the next step.
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          {/*<div className="study-image" data-uk-lightbox="animation: fade">
-             <a href={frame5}>
-              <img src={frame5} alt="" />
-              <span className="gray-overlay"><span>Click to expand</span></span>
-            </a> 
-          </div>*/}
-          missing image inaccurate information
+      <div className="uk-section uk-container uk-padding-remove-bottom">
+        <div className="uk-margin-large uk-padding">
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={frame6}>
+              <img src={frame6} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div className="uk-margin-xlarge-top uk-padding">
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={frame9}>
+              <img src={frame9} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container uk-padding-remove-horizontal">
         <div className=" uk-margin-large uk-padding">
           <p>POINT OF VIEW</p>
           <p>
@@ -289,7 +325,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-remove-top">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame7}>
@@ -301,8 +337,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container" ref={ideation}>
-        <div className=" uk-margin-large uk-padding">
+      <div
+        className="uk-section-xlarge uk-container uk-padding-remove-bottom"
+        ref={ideation}
+      >
+        <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Ideation</h2>
           <p>DRUMMING UP FEATURE IDEAS</p>
           <p>
@@ -315,7 +354,7 @@ const Spayces = () => {
             slowly build out lower priority items for future product
             development.
           </p>
-          <div>
+          <div className="uk-margin-large-bottom">
             <a
               className="uk-button uk-button-default jerday-btn"
               href="https://airtable.com/shrqrkBudcH1uyian/tbl7iI8A8CPbrXe2L"
@@ -333,7 +372,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-xlarge uk-container">
+      <div className="uk-section-xlarge uk-container uk-padding-remove-top">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame8}>
@@ -345,10 +384,10 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding"></div>
+      <div className="uk-section-large uk-container uk-padding-bottom">
+        <div className=""></div>
       </div>
-      <div className="uk-section-xlarge uk-container">
+      <div className="uk-section-xlarge uk-container uk-padding-remove-vertical">
         <div className=" uk-margin-large uk-padding">
           <p>User Flow</p>
           <p>
@@ -360,18 +399,22 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-remove-top">
         <div className=" uk-margin-large uk-padding">
-          {/*<div className="study-image" data-uk-lightbox="animation: fade">
-              <a href={frame8}>
-              <img src={frame8} alt="" />
-              <span className="gray-overlay"><span>Click to expand</span></span>
-            </a> 
-          </div>*/}
-          missing image user flow
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={userflow}>
+              <img src={userflow} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container uk-padding-bottom">
+        <div className=""></div>
+      </div>
+      <div className="uk-section uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <p>NOSES TO THE GRINDSTONE</p>
           <p>
@@ -401,7 +444,7 @@ const Spayces = () => {
       <div className="uk-section-large uk-container">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-xlarge  uk-padding-remove-bottom uk-container">
+      <div className="uk-section-xlarge uk-padding-remove-bottom uk-container">
         <div className=" uk-margin-large uk-padding">
           <p>
             Before working on the visual design, I had to ensure that the design
@@ -417,25 +460,27 @@ const Spayces = () => {
             sought to observe specific challenges users faced in the process and
             their emotions through each journey.
           </p>
-          <div className="uk-margin-top">
-            <button className="uk-button uk-button-default jerday-btn">
-              Interact with prototype in Figma
-            </button>
+        </div>
+      </div>
+      <div className="uk-section-large uk-container uk-padding-remove-top">
+        <div className=" uk-margin-large uk-padding">
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={prototype}>
+              <img src={prototype} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          {/*  <div className="study-image" data-uk-lightbox="animation: fade">
-            <a href={frame8}>
-              <img src={frame8} alt="" />
-              <span className="gray-overlay"><span>Click to expand</span></span>
-            </a>
-          </div> */}
-          missing image mid fidelity prototype
-        </div>
+      <div className="uk-section-xlarge uk-container">
+        <div className="uk-margin-xlarge uk-padding-large"></div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section uk-container">
+        <div className="uk-margin-large uk-padding-large"></div>
+      </div>
+      <div className="uk-section-large uk-padding-remove-vertical uk-container">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Testing</h2>
           <p>
@@ -487,7 +532,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-top uk-container">
+      <div className="uk-section-large uk-padding-remove-vertical uk-container">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">The Result</h2>
           <div className="study-image" data-uk-lightbox="animation: fade">
@@ -516,11 +561,15 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding"></div>
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="uk-padding uk-padding-remove-top">
+          <a href="" className="uk-button uk-button-default jerday-btn">
+            Interact with prototype in Figma
+          </a>
+        </div>
       </div>
       <div
-        className="uk-section-large uk-container"
+        className="uk-section-large uk-container uk-padding-remove-vertical"
         ref={thoughts}
         id="thoughts"
       >
@@ -535,7 +584,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">
+      <div className="uk-section uk-container uk-padding-xlarge-bottom next-section">
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text nxt-header uk-margin-left">
             Next Project

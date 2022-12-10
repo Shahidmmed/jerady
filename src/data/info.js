@@ -64,9 +64,7 @@ export const selectedProjects = [
     type: "UI/UX Design",
   },
 ];
-const caseStudies = [
-  {
-    title: "",
-    image: "",
-  },
-];
+export const links = {
+  resume:
+    "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:5f2ef492-1a33-4425-a32c-29998610cca2",
+};

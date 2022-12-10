@@ -43,6 +43,9 @@
     align-items: center;
   }
   .footer-socials {
+    .social {
+      margin-right: 10px !important;
+    }
     white-space: no-wrap;
     display: contents;
     .mail {

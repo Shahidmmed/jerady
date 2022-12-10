@@ -1,8 +1,6 @@
 import React from "react";
 import bethCover from "../../assets/images/caseStudies/BethnielFinance/projectdetailscover.png";
-import signup from "../../assets/images/caseStudies/BethnielFinance/showbethsign.png";
-import home from "../../assets/images/caseStudies/BethnielFinance/showhomefirst.png";
-import onboarding from "../../assets/images/caseStudies/BethnielFinance/onboarding.png";
+import onboarding from "../../assets/images/caseStudies/BethnielFinance/onboardingsh.png";
 import "./Work.scss";
 import { selectedProjects } from "../../data/info";
 import { NavLink } from "react-router-dom";
@@ -42,7 +40,7 @@ const Bethniel = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -73,7 +71,7 @@ const Bethniel = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section uk-container">
+      <div className="uk-section uk-container uk-padding-remove-top">
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
@@ -89,11 +87,11 @@ const Bethniel = () => {
         </div>
       </div>
       <div
-        className="uk-section-large uk-container overview"
+        className="uk-section uk-container uk-padding-remove-top overview"
         ref={overview}
         id="overview"
       >
-        <div className=" uk-margin-large uk-padding">
+        <div className="uk-padding">
           <h2 className="header-text">Overview</h2>
           <p>
             As part of its grand vision to thrive amidst growing competition and
@@ -108,9 +106,7 @@ const Bethniel = () => {
             as much as 2x, helping the company to stay ahead of the curve.
           </p>
         </div>
-      </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+        <div className="uk-padding">
           <h2 className="header-text">A Facelift</h2>
           <p>
             My starting point in the project was to familiarize with and
@@ -132,27 +128,11 @@ const Bethniel = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          <div
-            className="study-image uk-child-width-1-3@m"
-            data-uk-grid
-            data-uk-lightbox="animation: slide"
-          >
+      <div className="uk-section uk-padding-remove-top uk-container">
+        <div className="uk-padding">
+          <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={onboarding}>
               <img src={onboarding} alt="" />
-              <span className="gray-overlay">
-                <span>Click to expand</span>
-              </span>
-            </a>
-            <a href={signup}>
-              <img src={signup} alt="" />
-              <span className="gray-overlay">
-                <span>Click to expand</span>
-              </span>
-            </a>
-            <a href={home}>
-              <img src={home} alt="" />
               <span className="gray-overlay">
                 <span>Click to expand</span>
               </span>
@@ -160,7 +140,7 @@ const Bethniel = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-padding-remove-top uk-container">
         <div className=" uk-margin-large uk-padding">
           <h2 className="header-text">Forming the Hypothesis</h2>
         </div>

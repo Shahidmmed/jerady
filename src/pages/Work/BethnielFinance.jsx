@@ -35,7 +35,7 @@ const BethnielFinance = () => {
         </div>
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-padding">
           <ul data-uk-tab className="uk-padding-horizontal">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
@@ -66,7 +66,7 @@ const BethnielFinance = () => {
           <div></div>
         </div>
       </div>
-      <div className="uk-section uk-container">
+      <div className="uk-section uk-container uk-padding-remove-top">
         <div className="uk-margin-large uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
@@ -82,7 +82,7 @@ const BethnielFinance = () => {
         </div>
       </div>
       <div
-        className="uk-section-large uk-container"
+        className="uk-section uk-container uk-padding-remove-top overview"
         ref={overview}
         id="overview"
       >
@@ -105,8 +105,8 @@ const BethnielFinance = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-padding-remove-top uk-container">
+        <div className="uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={home}>
               <img src={home} alt="" />

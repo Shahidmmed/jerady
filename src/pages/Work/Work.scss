@@ -90,7 +90,7 @@ span.gray-overlay {
 
   .next-card {
     border-radius: 15px;
-    min-height: 540px;
+    max-height: 540px;
     overflow: hidden;
     img {
       object-fit: cover;
