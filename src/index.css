@@ -21,11 +21,11 @@ body {
 }
 
 body:has(.work-list:nth-child(1):hover) {
-  background-color: #1e87f0;
+  background-color: #f5f0eb;
 }
 
 body:has(.work-list:nth-child(1):hover) .top-nav {
-  background-color: #1e87f0 !important;
+  background-color: #f5f0eb !important;
 }
 
 body:has(.work-list:nth-child(2):hover) {

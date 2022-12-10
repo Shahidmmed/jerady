@@ -12,7 +12,10 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="uk-section-large uk-container">
+      <div
+        className="uk-section-large uk-container"
+        data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
+      >
         <div className="uk-margin-large uk-padding">
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>
           <h1 className="header-text">Design Rocks My World</h1>
@@ -29,7 +32,10 @@ const Home = () => {
       </div>
       <div className="uk-section uk-container uk-margin-bottom" id="projects">
         <div className="uk-padding">
-          <div className=" uk-margin-large">
+          <div
+            className=" uk-margin-large"
+            data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
+          >
             <h2 className="header-text uk-margin-remove">Selected Projects</h2>
             <small>
               I’VE WORKED ON<span></span>
@@ -60,11 +66,11 @@ const Home = () => {
                       >
                         <img src={getImgUrl(project.image)} alt="" />
 
-                        <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
+                        <div className="uk-card uk-card-default previewText">
                           {project.previewText}
                           <span
                             data-uk-icon="chevron-double-right"
-                            className="uk-position-bottom-right uk-padding-small"
+                            className=""
                           ></span>
                         </div>
 
