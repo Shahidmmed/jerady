@@ -11,12 +11,18 @@ const Footer = () => {
       <div className=" uk-padding">
         <hr className="bottom-line" />
         <div className="uk-flex uk-flex-between@s footer-section">
-          <h2 className="footer-text">
+          <h2
+            className="footer-text"
+            data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
+          >
             Let’s Connect and talk about music, conspiracy theories and all
             things design.
           </h2>
           <p className="email uk-margin-right">jeradybrew18@gmail.com</p>
-          <div className="uk-margin-bottom footer-socials">
+          <div
+            className="uk-margin-bottom footer-socials"
+            data-uk-scrollspy="target: > .social; cls: uk-animation-fade; repeat: true; delay: 500"
+          >
             <a
               href="mailto:jeradybrew18@gmail.com"
               className="uk-margin-right social mail"

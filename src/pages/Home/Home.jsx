@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { getImgUrl } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
-import ellipse from "../../assets/images/Ellipse42.png";
 import "./Home.scss";
+import Ellipse from "../../components/Footer/Ellipse";
 
 const Home = () => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const Home = () => {
         <div className="uk-padding">
           <div
             className=" uk-margin-large"
-            data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
+            data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
           >
             <h2 className="header-text uk-margin-remove">Selected Projects</h2>
             <small>
@@ -53,7 +53,10 @@ const Home = () => {
                         : "work-list"
                     }
                   >
-                    <NavLink to={project.page}>
+                    <NavLink
+                      to={project.page}
+                      data-uk-scrollspy="target: > .work-card; cls: uk-animation-fade; delay: 500"
+                    >
                       <div
                         className={
                           index % 2 !== 0
@@ -86,32 +89,7 @@ const Home = () => {
         </div>
       </div>
       <div className="uk-section uk-container"></div>
-      <div className="ellipse-section">
-        <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
-          <div className="uk-padding uk-padding-remove-bottom">
-            <div className="uk-margin" data-uk-grid>
-              <div className="uk-width-auto">
-                <img src={ellipse} alt="" className="home-image" />
-              </div>
-              <div className="uk-width-expand">
-                <div className="home-contact">
-                  <h2 className="header-text">Need some help on a project</h2>
-                  <p className="help-text">
-                    Send an email if you would like to collaborate or have
-                    questions about my work.
-                  </p>
-                  <a
-                    href="mailto:jeradybrew18@gmail.com"
-                    className="uk-button uk-button-default jerday-btn"
-                  >
-                    Send Email
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Ellipse />
     </div>
   );
 };

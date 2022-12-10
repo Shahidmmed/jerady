@@ -7,6 +7,8 @@ import im1 from "../../assets/images/im1.png";
 import im2 from "../../assets/images/im2.png";
 import "./About.scss";
 import { getImgUrl } from "../../data/functions";
+import Elipse from "../../components/Footer/Ellipse";
+import Ellipse from "../../components/Footer/Ellipse";
 const gallery = import.meta.glob("../../assets/images/bookCovers/*.(png|jpg)");
 
 const About = () => {
@@ -156,32 +158,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="ellipse-section">
-        <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
-          <div className="uk-padding uk-padding-remove-bottom">
-            <div className="uk-margin" data-uk-grid>
-              <div className="uk-width-auto">
-                <img src={ellipse} alt="" className="home-image" />
-              </div>
-              <div className="uk-width-expand">
-                <div className="home-contact">
-                  <h2 className="header-text">Need some help on a project</h2>
-                  <p className="help-text">
-                    Send an email if you would like to collaborate or have
-                    questions about my work.
-                  </p>
-                  <a
-                    href="mailto:jeradybrew18@gmail.com"
-                    className="uk-button uk-button-default jerday-btn"
-                  >
-                    Send Email
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Ellipse />
     </div>
   );
 };

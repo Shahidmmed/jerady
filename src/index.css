@@ -20,36 +20,8 @@ body {
   background-color: #fff;
 }
 
-body:has(.work-list:nth-child(1):hover) {
-  background-color: #f5f0eb;
-}
-
-body:has(.work-list:nth-child(1):hover) .top-nav {
-  background-color: #f5f0eb !important;
-}
-
-body:has(.work-list:nth-child(2):hover) {
-  background-color: #ec4628;
-}
-
-body:has(.work-list:nth-child(2):hover) .top-nav {
-  background-color: #ec4628 !important;
-}
-
-body:has(.work-list:nth-child(3):hover) {
-  background-color: #6a71e8;
-}
-
-body:has(.work-list:nth-child(3):hover) .top-nav {
-  background-color: #6a71e8 !important;
-}
-
-body:has(.work-list:nth-child(4):hover) {
-  background-color: #c5e2f4;
-}
-
-body:has(.work-list:nth-child(4):hover) .top-nav {
-  background-color: #c5e2f4 !important;
+.header-text {
+  color: #fff !important;
 }
 
 a {
@@ -75,6 +47,10 @@ a:hover {
   background: #f2f2f2 !important;
   border-radius: 20px !important;
   text-transform: none !important;
+}
+
+.header-text {
+  color: #040404 !important;
 }
 
 h2 {
@@ -103,4 +79,51 @@ h2 {
   background-color: #333;
   color: #fff;
   border: 2px solid #fff;
+}
+
+@media (min-width: 720px) {
+  body:has(.work-list:nth-child(1):hover) {
+    background-color: #f5f0eb;
+  }
+
+  body:has(.work-list:nth-child(1):hover) .top-nav {
+    background-color: #f5f0eb !important;
+  }
+
+  body:has(.work-list:nth-child(2):hover) {
+    background-color: #ec4628;
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(2):hover) small span:after {
+    background-color: #fff !important;
+  }
+  body:has(.work-list:nth-child(2):hover) .header-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(2):hover) .top-nav {
+    background-color: #ec4628 !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) {
+    background-color: #6a71e8;
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) small span:after {
+    background-color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) .top-nav {
+    background-color: #6a71e8 !important;
+  }
+
+  body:has(.work-list:nth-child(4):hover) {
+    background-color: #c5e2f4;
+  }
+
+  body:has(.work-list:nth-child(4):hover) .top-nav {
+    background-color: #c5e2f4 !important;
+  }
 }
