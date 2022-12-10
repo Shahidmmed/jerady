@@ -88,7 +88,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section uk-container uk-padding-remove-top">
-        <div className="uk-margin-large uk-padding">
+        <div className="uk-margin uk-padding">
           <div className="uk-child-width-1-2@s uk-margin-top" data-uk-grid>
             <p>
               Role: UX Design, User Research, Prototyping, Usability Testing.
@@ -109,21 +109,10 @@ const Spayces = () => {
               Spayces is a passion project birthed out of the need and
               frustration of making quick and easy reservations at restaurants.
               During the timeline of the project, I designed the Onboarding,
-              Home Page, Restaurant Details and Reservation flow. ‍
-            </p>
-            <p>
-              By providing, reliable and accurate restaurant information
-              (personalized menus, prices, location, contact details etc), and
-              giving users the option to pre-order meals ahead of the occasion,
-              Spayces is meant to make going out to eat as simple and
-              stress-free as simple and stress-free can get.
-            </p>
-            <p>
-              How might we help curious users easily access accurate information
-              on restaurants, make reseravtions and pre-order meals seamlessly?
+              Home Page, Restaurant Details and Reservation flow.
             </p>
           </div>
-          <div className="uk-padding">
+          <div className="uk-padding uk-padding-remove-top">
             <h2 className="header-text">The Challenge</h2>
             <p>
               In Ghana, people mostly get around by word of mouth, and usually,
@@ -156,7 +145,7 @@ const Spayces = () => {
       >
         <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text">The Voyage</h2>
-          <p>
+          <p className="uk-margin-large-bottom">
             Originally named Resto, we (a team of 2 designers and a full-stack
             developer) wanted to create a marginally better and scalable
             experience for finding restaurants, personalized menus and booking
@@ -185,10 +174,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div
-        className="uk-section uk-container uk-padding-remove-vertical"
-        ref={voyage}
-      >
+      <div className="uk-section uk-container uk-padding-small" ref={voyage}>
         <div className="uk-padding uk-padding-remove-top">
           <h2 className="header-text">Poking & Prying</h2>
           <p>
