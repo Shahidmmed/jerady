@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <div
         className="uk-section uk-container"
-        data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
+        data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
       >
         <div className="uk-margin-large uk-padding">
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>

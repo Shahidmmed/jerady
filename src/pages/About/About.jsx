@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import { experience, links } from "../../data/info";
-import playlist1 from "../../assets/images/playlistCovers/playlist1.jpg";
-import playlist2 from "../../assets/images/playlistCovers/playlist2.jpeg";
-import ellipse from "../../assets/images/Ellipse42.png";
+import playlist1 from "../../assets/images/playlistCovers/eunoia.png";
+import playlist2 from "../../assets/images/playlistCovers/cockaigne.png";
 import im1 from "../../assets/images/im1.png";
 import im2 from "../../assets/images/im2.png";
 import "./About.scss";
 import { getImgUrl } from "../../data/functions";
-import Elipse from "../../components/Footer/Ellipse";
 import Ellipse from "../../components/Footer/Ellipse";
 const gallery = import.meta.glob("../../assets/images/bookCovers/*.(png|jpg)");
 
