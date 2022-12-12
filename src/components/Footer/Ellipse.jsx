@@ -5,7 +5,7 @@ const Ellipse = () => {
   return (
     <>
       <div className="ellipse-section">
-        <div className="uk-section uk-container uk-padding-remove-bottom uk-padding-xlarge-top uk-margin-xlarge-top">
+        <div className="uk-section uk-container uk-padding-remove-bottom">
           <div className="uk-padding uk-padding-remove-bottom">
             <div className="uk-margin" data-uk-grid>
               <div

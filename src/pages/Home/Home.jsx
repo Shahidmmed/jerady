@@ -13,25 +13,24 @@ const Home = () => {
   return (
     <div className="home">
       <div
-        className="uk-section-large uk-container"
+        className="uk-section uk-container"
         data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
       >
         <div className="uk-margin-large uk-padding">
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>
           <h1 className="header-text">Design Rocks My World</h1>
           <p className="summary">
-            My superpower lies in my ability to combine form and function,
-            resulting in visually appealing and functional designs.
-          </p>
-          <p className="summary">
-            My creative process is centered around identifying unmet needs and
-            developing user-centered and data-informed solutions that deliver
-            user and business value.
+            and I am particularly obsessed with and experienced in crafting
+            useful, delightful and impactful experiences that align with
+            business success by bridging the gap between people and products.
           </p>
         </div>
       </div>
-      <div className="uk-section uk-container uk-margin-bottom" id="projects">
-        <div className="uk-padding">
+      <div
+        className="uk-section uk-container uk-margin-bottom uk-padding-remove-top"
+        id="projects"
+      >
+        <div className="uk-padding uk-padding-remove-top">
           <div
             className=" uk-margin-large"
             data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
@@ -88,7 +87,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section uk-container"></div>
       <Ellipse />
     </div>
   );

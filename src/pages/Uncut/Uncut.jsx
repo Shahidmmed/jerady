@@ -34,6 +34,8 @@ const Uncut = () => {
     getImgUrl(bc?.replace("../../assets/images/", ""))
   );
 
+  console.log(brand);
+
   let brand1 = brand;
   for (let i = 0; i < 50; i++) {
     brand1 = brand1.concat(brand);
@@ -65,8 +67,11 @@ const Uncut = () => {
 
   return (
     <div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-bottom">
+        <div
+          className=" uk-margin-large uk-padding"
+          data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
+        >
           <h1 className="header-text">Side Missions</h1>
           <p className="uncut-text">
             I am an Experience Designer with a Graphic Design, Research and
@@ -77,8 +82,8 @@ const Uncut = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="">
           <a onClick={onSwipe}>
             <TinderLikeCard
               images={brand1}
@@ -93,11 +98,16 @@ const Uncut = () => {
           </a>
         </div>
         <div className="uk-margin-large uk-padding uncut-header">
-          <h3 className="header-text">BRAND DESIGN</h3>
+          <h3
+            className="header-text uk-margin-top"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500"
+          >
+            BRAND DESIGN
+          </h3>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="">
           <a onClick={onMarketSwipe}>
             <TinderLikeCard
               images={marketing1}
@@ -111,11 +121,16 @@ const Uncut = () => {
           </a>
         </div>
         <div className="uk-margin-large uk-padding uncut-header">
-          <h3 className="header-text">MARKETING DESIGN</h3>
+          <h3
+            className="header-text uk-margin-top"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500"
+          >
+            MARKETING DESIGN
+          </h3>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="">
           <a onClick={onGraphicSwipe}>
             <TinderLikeCard
               images={graphic1}
@@ -129,10 +144,15 @@ const Uncut = () => {
           </a>
         </div>
         <div className="uk-margin-large uk-padding uncut-header">
-          <h3 className="header-text">GRAPHIC DESIGN</h3>
+          <h3
+            className="header-text uk-margin-top"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500"
+          >
+            GRAPHIC DESIGN
+          </h3>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-top uk-margin-xlarge-top"></div>
+      <div className="uk-section-large uk-container"></div>
     </div>
   );
 };
