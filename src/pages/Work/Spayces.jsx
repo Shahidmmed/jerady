@@ -583,14 +583,15 @@ const Spayces = () => {
             <ul className="uk-child-width-1-2@s" data-uk-grid>
               {nextprojects.map((project, index) => (
                 <li key={index} className="">
-                  <div
-                    className="uk-card uk-card-default next-card"
-                    style={{
-                      backgroundImage: `${getImgUrl(project.image)}`,
-                    }}
-                  >
-                    <img src={getImgUrl(project.image)} alt="" />
-                    <NavLink to={project.page}>
+                  <NavLink to={project.page}>
+                    <div
+                      className="uk-card uk-card-default next-card"
+                      style={{
+                        backgroundImage: `${getImgUrl(project.image)}`,
+                      }}
+                    >
+                      <img src={getImgUrl(project.image)} alt="" />
+
                       <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
                         {project.previewText}
                         <span
@@ -598,8 +599,8 @@ const Spayces = () => {
                           className="uk-position-bottom-right uk-padding-small"
                         ></span>
                       </div>
-                    </NavLink>
-                  </div>
+                    </div>
+                  </NavLink>
                 </li>
               ))}
             </ul>
