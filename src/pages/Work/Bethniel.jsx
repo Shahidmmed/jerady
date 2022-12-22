@@ -22,7 +22,7 @@ import { useRef } from "react";
 
 const Bethniel = () => {
   const overview = useRef(null);
-  const voyage = useRef(null);
+  const sprint = useRef(null);
   const ideation = useRef(null);
   const designs = useRef(null);
   const thoughts = useRef(null);
@@ -61,18 +61,18 @@ const Bethniel = () => {
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => scrollToSection(voyage)}>
-                THE VOYAGE
+              <a href="#" onClick={() => scrollToSection(sprint)}>
+                RUNNING A DESIGN SPRINT
               </a>
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(ideation)}>
-                IDEATION
+                RETHINKING UX
               </a>
             </li>
             <li>
               <a href="#" onClick={() => scrollToSection(designs)}>
-                DESIGNS & TESTING
+                TESTING
               </a>
             </li>
             <li>
@@ -159,7 +159,10 @@ const Bethniel = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-vertical uk-margin-top uk-container">
+      <div
+        className="uk-section-large uk-padding-remove-vertical uk-margin-top uk-container"
+        ref={sprint}
+      >
         <div className="uk-padding ">
           <h3 className="header-text">Running a 5-day Design Sprint</h3>
           <p>
@@ -315,7 +318,7 @@ const Bethniel = () => {
           integrating the following:
         </div>
       </div>
-      <div className="uk-section uk-container uk-padding-small">
+      <div className="uk-section uk-container uk-padding-small" ref={ideation}>
         <div className="uk-padding uk-padding-remove-bottom uk-margin-bottom">
           <h4 className="header-text">Rethinking User Experience</h4>
           <p>
