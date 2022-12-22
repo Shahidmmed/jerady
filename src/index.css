@@ -110,12 +110,21 @@ h4 {
   body:has(.work-list:nth-child(2):hover) small span:after {
     background-color: #fff !important;
   }
+
   body:has(.work-list:nth-child(2):hover) .header-text {
     color: #fff !important;
   }
 
   body:has(.work-list:nth-child(2):hover) .top-nav {
     background-color: #ec4628 !important;
+  }
+
+  body:has(.work-list:nth-child(2):hover) .footer-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(2):hover) hr {
+    border-top: 0.7px solid #fff !important;
   }
 
   body:has(.work-list:nth-child(3):hover) {
@@ -125,6 +134,18 @@ h4 {
 
   body:has(.work-list:nth-child(3):hover) small span:after {
     background-color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) .header-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) .footer-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(3):hover) hr {
+    border-top: 0.7px solid #fff !important;
   }
 
   body:has(.work-list:nth-child(3):hover) .top-nav {

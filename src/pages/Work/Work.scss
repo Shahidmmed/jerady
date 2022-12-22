@@ -35,6 +35,9 @@ span.gray-overlay {
 .study-brief {
   max-width: 550px;
 }
+.grey-text {
+  color: #8d8d8d;
+}
 .uk-tab {
   justify-content: space-between;
   padding-left: 80px !important;
@@ -115,8 +118,18 @@ span.gray-overlay {
 }
 
 @media (max-width: 420px) {
+  .reduce-bottom {
+    padding-bottom: 0px !important;
+  }
+  .remove-margin {
+    margin-bottom: 0px !important;
+  }
+  .reduce-top {
+    padding-top: 0px !important;
+  }
   .study-tab,
-  .next-section {
+  .next-section,
+  .hide-mobile {
     display: none !important;
   }
 }

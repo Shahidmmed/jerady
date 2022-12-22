@@ -7,7 +7,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="uk-container" id="contact">
+    <div className="uk-container footer" id="contact">
       <div className=" uk-padding">
         <hr className="bottom-line" />
         <div className="uk-flex uk-flex-between@s footer-section">

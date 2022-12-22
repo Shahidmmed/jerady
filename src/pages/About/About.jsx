@@ -188,7 +188,7 @@ const About = () => {
               data-uk-grid
               data-uk-scrollspy="cls: uk-animation-slide-right; delay: 500"
             >
-              <div className="music-text">
+              <div className="music-text spotify">
                 <h3 className="header-text">Cockaigne</h3>
                 <p>A playlist curated by me on Spotify</p>
               </div>

@@ -87,6 +87,28 @@ const Sapphire = () => {
       >
         <div className="uk-padding">
           <h2 className="header-text">Overview</h2>
+          <p>
+            Overview Sapphire is a fuel purchasing app that affords people the
+            convenience of buying fuel with the tap of a button without having
+            to be at the gas station. As an end-to-end energy tech start-up, the
+            company required a dashboard for fuel suppliers to track fuel
+            orders, deliveries, sales, earnings and inventory levels in
+            real-time. The dashboard will be used by both individual and
+            corporate energy service providers alike to manage the day-to-day
+            supply of fuel to consumers, make and receive payment and manage
+            operations.
+          </p>
+          <h2>Venturing into a new space</h2>
+          <p>
+            Sapphire is a fuel purchasing app that affords user the convenience
+            of buying fuel with the tap of a button without having to be at the
+            gas station. As an end-to-end energy tech start-up, the company
+            required a dashboard for fuel suppliers to track fuel orders,
+            deliveries, sales, earnings and inventory levels in real-time. The
+            dashboard will be used by both individual and corporate energy
+            service providers alike to manage the day-to-day supply of fuel to
+            consumers, make and receive payment and manage operations. ‍
+          </p>
         </div>
       </div>
       <div className="uk-section-large uk-container">

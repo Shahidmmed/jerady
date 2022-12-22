@@ -226,7 +226,7 @@ const Spayces = () => {
           to define our target persona to give context to the challenge. 
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-top">
+      <div className="uk-section-large uk-padding-remove-top reduce-bottom">
         <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame4} className="long-container">
@@ -238,7 +238,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge">
+      <div className="uk-section-large uk-container uk-padding-xlarge hide-mobile">
         <div className="uk-margin-large uk-padding-large"></div>
       </div>
       <div className="uk-section uk-container uk-padding-small">
@@ -251,8 +251,8 @@ const Spayces = () => {
           than just what they said to me.
         </div>
       </div>
-      <div className="uk-section-xlarge uk-padding-remove-top">
-        <div className=" uk-margin-large uk-padding uk-padding-remove-top">
+      <div className="uk-section-xlarge uk-padding-remove-top reduce-bottom">
+        <div className=" uk-margin-large uk-padding uk-padding-remove-top reduce-bottom">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame5} className="long-container">
               <img src={frame5} alt="" className="xlong-image" />
@@ -263,11 +263,11 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge">
+      <div className="uk-section-large uk-container uk-padding-xlarge hide-mobile">
         <div className="uk-margin-large uk-padding-large"></div>
       </div>
       <div className="uk-section uk-container uk-padding-small">
-        <div className="uk-padding uk-padding-remove-bottom">
+        <div className="uk-padding uk-padding-remove-bottom uk-margin-bottom">
           In order to move forward, we needed to learn what the recurring
           patterns and similarities in our findings were. To do that, I quickly
           created an affinity diagram to group user pain points by themes. The
@@ -278,7 +278,7 @@ const Spayces = () => {
         </div>
       </div>
       <div className="uk-section uk-container uk-padding-remove-vertical">
-        <div className="uk-margin-large uk-padding uk-padding-remove-top">
+        <div className="uk-margin-large uk-padding uk-padding-remove-top remove-margin">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame6}>
               <img src={frame6} alt="" />
@@ -288,7 +288,7 @@ const Spayces = () => {
             </a>
           </div>
         </div>
-        <div className="uk-margin-xlarge-top uk-padding">
+        <div className="uk-margin-xlarge-top uk-padding reduce-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame9}>
               <img src={frame9} alt="" />
@@ -324,7 +324,7 @@ const Spayces = () => {
         </div>
       </div>
       <div
-        className="uk-section-xlarge uk-container uk-padding-remove-bottom"
+        className="uk-section-xlarge uk-container uk-padding-remove-bottom reduce-top"
         ref={ideation}
       >
         <div className="uk-margin-large uk-padding uk-padding-remove-bottom">
@@ -358,7 +358,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-xlarge uk-container uk-padding-remove-top">
+      <div className="uk-section-xlarge uk-container uk-padding-remove-top reduce-bottom">
         <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame8}>
@@ -370,7 +370,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-bottom">
+      <div className="uk-section-large uk-container uk-padding-bottom hide-mobile">
         <div className=""></div>
       </div>
       <div className="uk-section-xlarge uk-container uk-padding-remove-vertical">
@@ -385,7 +385,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-top">
+      <div className="uk-section-large uk-container uk-padding-remove-top reduce-bottom">
         <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={userflow}>
@@ -397,7 +397,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-bottom">
+      <div className="uk-section-large uk-container uk-padding-bottom hide-mobile">
         <div className=""></div>
       </div>
       <div className="uk-section uk-container uk-padding-remove-bottom">
@@ -415,7 +415,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-top uk-container">
+      <div className="uk-section-large uk-padding-remove-top uk-container reduce-bottom">
         <div className="uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame10}>
@@ -427,10 +427,10 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
+      <div className="uk-section-large uk-container hide-mobile">
         <div className="uk-margin-large uk-padding"></div>
       </div>
-      <div className="uk-section-xlarge uk-padding-remove-bottom uk-container">
+      <div className="uk-section-xlarge uk-padding-remove-bottom uk-container reduce-top">
         <div className=" uk-margin-large uk-padding uk-padding-remove-bottom">
           <p>
             Before working on the visual design, I had to ensure that the design
@@ -448,7 +448,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-remove-top">
+      <div className="uk-section-large uk-container uk-padding-remove-top reduce-bottom">
         <div className=" uk-margin-large uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={prototype}>
@@ -460,10 +460,10 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-xlarge uk-container">
+      <div className="uk-section-xlarge uk-container hide-mobile">
         <div className="uk-margin-xlarge uk-padding-large"></div>
       </div>
-      <div className="uk-section uk-container">
+      <div className="uk-section uk-container hide-mobile">
         <div className="uk-margin-large uk-padding-large"></div>
       </div>
       <div className="uk-section-large uk-padding-remove-vertical uk-container">

@@ -43,8 +43,8 @@ b {
   width: 260px;
 }
 .music {
-  height: 320px;
-  width: 320px;
+  height: 360px;
+  width: 380px;
   border: #2d2a2a solid 1px;
   border-radius: 5px;
 }
@@ -109,9 +109,9 @@ b {
   }
   .playlist2 {
     padding: 0px !important;
-    display: flex;
+    display: flex !important;
     flex-direction: column-reverse;
-    margin-left: 35%;
+    margin-left: 25% !important;
   }
   .music-text {
     margin-top: 20px !important;
@@ -121,6 +121,13 @@ b {
     p {
       margin-top: 0px !important;
       width: 214px;
+    }
+  }
+  .spotify {
+    text-align: right;
+    p {
+      position: relative;
+      right: 15%;
     }
   }
   .music {

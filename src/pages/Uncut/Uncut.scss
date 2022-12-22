@@ -10,7 +10,27 @@
   max-width: 720px;
 }
 .uncut-header {
-  margin-left: 5.1rem;
+  margin-left: 30px;
+}
+.interaction-link {
+  text-align: right;
+  margin-bottom: 6px;
+}
+.uncut-link {
+  text-decoration: none;
+  color: black !important;
+}
+.interaction-design {
+  margin: auto;
+  img {
+    width: 1095px;
+  }
+}
+
+@media (min-width: 1075px) {
+  .uncut-link {
+    margin-right: 26px;
+  }
 }
 
 @media (max-width: 1075px) {
@@ -93,11 +113,10 @@
   .uncut-header {
     margin-left: 0;
     h3 {
-      margin-top: 20px;
+      margin-top: 60px !important;
     }
   }
   .tinder {
-    margin-left: -18px !important;
     width: 320px !important;
     height: 320px !important;
   }

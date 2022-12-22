@@ -38,7 +38,7 @@ export const selectedProjects = [
   {
     name: "Bethniel Finance",
     previewText: "Shaping and improving the future of personal finance",
-    image: "caseStudies/BethnielFinance/projectTile.png",
+    image: "caseStudies/BethnielFinance/bethnielcover.png",
     page: "/casestudy/bethniel",
     type: "UI/UX Design",
   },
