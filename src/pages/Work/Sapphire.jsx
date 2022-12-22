@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import sapphireCover from "../../assets/images/caseStudies/Sapphire/sapphireCover.png";
+import dashboard from "../../assets/images/caseStudies/Sapphire/sapphiredashboard.png";
 import { getImgUrl, scrollToSection } from "../../data/functions";
 import { selectedProjects } from "../../data/info";
 
@@ -17,14 +18,14 @@ const Sapphire = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">SAPPHIRE</h5>
-          <h1 className="header-text study-header uk-margin-remove">
+          <h1 className="purple-header study-header uk-margin-remove">
             Powering the Modern Fuel Supply Experience
           </h1>
           <p className="study-brief uk-margin-top">
-            Spayces is a Table Reservation App that provides reliable and
-            accurate restaurant information (personalized menus, prices,
-            location, contact details etc)and also gives users the option to
-            pre-order meals ahead of any occasion.
+            Sapphire is a fuel supply management dashboard that allows
+            individual and corporate fuel suppliers to track orders, deliveries,
+            sales, earnings and inventory levels in real-time, as well as manage
+            operations, and make and receive payment.
           </p>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={sapphireCover}>
@@ -38,7 +39,7 @@ const Sapphire = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-padding">
-          <ul data-uk-tab className="uk-padding-horizontal">
+          <ul data-uk-tab className="uk-padding-horizontal purple-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
                 OVERVIEW
@@ -74,18 +75,18 @@ const Sapphire = () => {
             <p>
               Role: UX Design, User Research, Prototyping, Usability Testing.
             </p>
-            <p>Tools: Figma, Airtable, Adobe Illustrator, Miro, iPad</p>
-            <p>Team: AJ Mensah, Naa Ayeley Ayettey, Daniel Olukoya</p>
-            <p>Timeline: 29/03/2022-7/07/2022</p>
+            <p>Tools: Figma, Trello, Slack, Google Meets </p>
+            <p>Team: Alex Tyschenko, AJ Mensah</p>
+            <p>Timeline: 29/10/2021- 1/11/2022</p>
           </div>
         </div>
       </div>
       <div
-        className="uk-section uk-container uk-padding-remove-top overview"
+        className="uk-section uk-container uk-padding-remove-vertical overview"
         ref={overview}
         id="overview"
       >
-        <div className="uk-padding">
+        <div className="uk-padding uk-padding-remove-bottom">
           <h2 className="header-text">Overview</h2>
           <p>
             Overview Sapphire is a fuel purchasing app that affords people the
@@ -98,7 +99,7 @@ const Sapphire = () => {
             supply of fuel to consumers, make and receive payment and manage
             operations.
           </p>
-          <h2>Venturing into a new space</h2>
+          <h2>Designing</h2>
           <p>
             Sapphire is a fuel purchasing app that affords user the convenience
             of buying fuel with the tap of a button without having to be at the
@@ -107,28 +108,24 @@ const Sapphire = () => {
             deliveries, sales, earnings and inventory levels in real-time. The
             dashboard will be used by both individual and corporate energy
             service providers alike to manage the day-to-day supply of fuel to
-            consumers, make and receive payment and manage operations. ‍
+            consumers, make and receive payment and manage operations.
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding"></div>
-      </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding"></div>
-      </div>
-      <div className="uk-section-large uk-container">
-        <div className=" uk-margin-large uk-padding">
-          <h2 className="header-text">Forming the Hypothesis</h2>
+      <div className="uk-section uk-padding-remove-top uk-container">
+        <div className="uk-padding uk-padding-remove-top">
+          <div className="study-image" data-uk-lightbox="animation: fade">
+            <a href={dashboard}>
+              <img src={dashboard} alt="" />
+              <span className="gray-overlay">
+                <span>Click to expand</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-
       <div className="uk-section-large uk-container">
-        <div className="uk-margin-large uk-padding">
-          <h2 className="header-text">Final Screens</h2>
-          <div></div>
-          <div></div>
-        </div>
+        <div className=" uk-margin-large uk-padding"></div>
       </div>
 
       <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">

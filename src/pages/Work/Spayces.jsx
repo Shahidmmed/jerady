@@ -32,8 +32,8 @@ const Spayces = () => {
     <div>
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
-          <h5 className="study-name">SPAYCES</h5>
-          <h1 className="header-text study-header orange-header">
+          <h5 className="study-name uk-margin-remove">SPAYCES</h5>
+          <h1 className="study-header orange-header uk-margin-remove">
             Reimagining the Restaurant Reservation Experience
           </h1>
           <p className="study-brief">
@@ -57,7 +57,7 @@ const Spayces = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-padding">
-          <ul data-uk-tab className="uk-padding-horizontal">
+          <ul data-uk-tab className="uk-padding-horizontal orange-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
                 OVERVIEW
@@ -203,9 +203,13 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <h4 className="header-text uk-margin-large-left">
-        Key Insights from Survey
-      </h4>
+      <div className="uk-section uk-container uk-padding-remove-vertical">
+        <div className="uk-padding-left">
+          <h4 className="header-text uk-margin-remove">
+            Key Insights from Survey
+          </h4>
+        </div>
+      </div>
       <div className="uk-section-large uk-padding-remove-vertical image-block">
         <div className="uk-margin uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">

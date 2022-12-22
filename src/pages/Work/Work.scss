@@ -2,8 +2,14 @@
   max-width: 500px;
   color: #1e87f0 !important;
 }
+.blue-header {
+  color: #1e87f0 !important;
+}
 .orange-header {
   color: #ec4628 !important;
+}
+.purple-header {
+  color: #666eed !important;
 }
 .study-image {
   max-width: 1200px;
@@ -56,21 +62,29 @@ span.gray-overlay {
   position: relative;
   margin-bottom: 20px;
 }
-.uk-tab li.uk-active a::after {
+.blue-tab li.uk-active a::after {
   content: "•" !important;
   color: #1e87f0;
   font-size: 45px;
   margin-top: 35px;
   position: absolute;
-  z-index: -1;
+  z-index: 10 !important;
 }
-.orange-tab li.uk-active a::after {
+.purple-tab li.uk-active a::after {
   content: "•" !important;
-  color: #ec4628;
+  color: #666eed;
   font-size: 45px;
   margin-top: 35px;
   position: absolute;
-  z-index: -1;
+  z-index: 10 !important;
+}
+.orange-tab li.uk-active a::after {
+  content: "•" !important;
+  color: #ec4628 !important;
+  font-size: 45px;
+  margin-top: 35px;
+  position: absolute;
+  z-index: 10 !important;
 }
 .long-container {
   display: flex;

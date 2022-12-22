@@ -16,13 +16,14 @@ const BethnielFinance = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
-          <h1 className="header-text study-header uk-margin-remove">
+          <h1 className="blue-header study-header uk-margin-remove">
             Designing a dashboard for finance experts
           </h1>
           <p className="study-brief uk-margin-top">
-            Bethniel Finance is a super app that incorporates all things
-            personal finance into one blah nubcvo;dvudbihnposhihhjdjddhd
-            dudo;ihdbuvdvo’d dubdohsbd dihnokpdpjd.
+            Spayces is a Table Reservation App that provides reliable and
+            accurate restaurant information (personalized menus, prices,
+            location, contact details etc)and also gives users the option to
+            pre-order meals ahead of any occasion.
           </p>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame1}>
@@ -36,7 +37,7 @@ const BethnielFinance = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-padding">
-          <ul data-uk-tab className="uk-padding-horizontal">
+          <ul data-uk-tab className="uk-padding-horizontal blue-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
                 OVERVIEW
@@ -73,16 +74,18 @@ const BethnielFinance = () => {
               Role: Design Lead, UX Design, UI Design, User Research,
               Prototyping, Usability Testing.
             </p>
+            <p>Tools: Figma, Airtable, Adobe Illustrator, Miro, iPad</p>
             <p>
-              Tools: Figma, Protopie, Airtable, Adobe Illustrator, Miro, iPad
+              <p className="uk-margin-remove">Team: AJ Mensah- UX Lead</p>
+              <p className="uk-margin-remove">Stefany Bio- UX Designer</p>
+              <p className="uk-margin-remove"> Samuel Lartey- Developer</p>
             </p>
-            <p>Team: AJ Mensah- UX Lead Samuel Lartey- Developer</p>
-            <p>Timeline: 03/10/2022-7/11/2022</p>
+            <p>Timeline: 29/03/2022-7/07/2022</p>
           </div>
         </div>
       </div>
       <div
-        className="uk-section uk-container uk-padding-remove-top overview"
+        className="uk-section uk-container uk-padding-remove-vertical overview"
         ref={overview}
         id="overview"
       >
@@ -106,7 +109,7 @@ const BethnielFinance = () => {
         </div>
       </div>
       <div className="uk-section uk-padding-remove-top uk-container">
-        <div className="uk-padding">
+        <div className="uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={home}>
               <img src={home} alt="" />
@@ -119,7 +122,6 @@ const BethnielFinance = () => {
       </div>
       <div className="uk-section-large uk-container" id="thoughts">
         <div className="uk-margin-large uk-padding">
-          <h2 className="header-text">Final Screens</h2>
           <div></div>
           <div></div>
         </div>

@@ -34,13 +34,13 @@ const Bethniel = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
-          <h1 className="header-text study-header uk-margin-remove">
-            Shaping and improving the Future of Personal Finance
+          <h1 className="blue-header study-header uk-margin-remove">
+            Rethinking User Experience of Personal Finance
           </h1>
           <p className="study-brief uk-margin-top">
-            Bethniel Finance is a super app that incorporates all things
-            personal finance into one blah nubcvo;dvudbihnposhihhjdjddhd
-            dudo;ihdbuvdvo’d dubdohsbd dihnokpdpjd.
+            Bethniel Finance is an app that helps young people improve their
+            financial literacy, manage personal finances, and access financial
+            services in a seamless and rewarding way.
           </p>
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={bethCover}>
@@ -54,7 +54,7 @@ const Bethniel = () => {
       </div>
       <div className="uk-section-large uk-padding-remove study-tab">
         <div className="uk-padding">
-          <ul data-uk-tab className="uk-padding-horizontal">
+          <ul data-uk-tab className="uk-padding-horizontal blue-tab">
             <li>
               <a href="#" onClick={() => scrollToSection(overview)}>
                 OVERVIEW
@@ -94,7 +94,11 @@ const Bethniel = () => {
             <p>
               Tools: Figma, Protopie, Airtable, Adobe Illustrator, Miro, iPad
             </p>
-            <p>Team: AJ Mensah- UX Lead Samuel Lartey- Developer</p>
+            <p>
+              <p className="uk-margin-remove">Team: AJ Mensah- UX Lead</p>
+              <p className="uk-margin-remove">Isaac Nkansah- Developer</p>
+              <p className="uk-margin-remove">Bright Sunu- Developer</p>
+            </p>
             <p>Timeline: 03/10/2022-7/11/2022</p>
           </div>
         </div>
