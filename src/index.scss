@@ -66,9 +66,6 @@ h2 {
   font-size: 2.1875rem !important;
 }
 
-h4 {
-}
-
 .top-btn-position {
   position: fixed;
   bottom: 15px;
@@ -93,7 +90,8 @@ h4 {
   border: 2px solid #fff;
 }
 
-@media (min-width: 720px) {
+/* @media (min-width: 720px) {
+  //beth hover anim
   body:has(.work-list:nth-child(1):hover) {
     background-color: #f5f0eb;
   }
@@ -102,6 +100,7 @@ h4 {
     background-color: #f5f0eb !important;
   }
 
+  //spayces hover anim
   body:has(.work-list:nth-child(2):hover) {
     background-color: #ec4628;
     color: #fff !important;
@@ -127,8 +126,9 @@ h4 {
     border-top: 0.7px solid #fff !important;
   }
 
+  //yamas anim
   body:has(.work-list:nth-child(3):hover) {
-    background-color: #6a71e8;
+    background-color: #222121;
     color: #fff !important;
   }
 
@@ -140,6 +140,10 @@ h4 {
     color: #fff !important;
   }
 
+  body:has(.work-list:nth-child(3):hover) .top-nav {
+    background-color: #222121 !important;
+  }
+
   body:has(.work-list:nth-child(3):hover) .footer-text {
     color: #fff !important;
   }
@@ -148,10 +152,7 @@ h4 {
     border-top: 0.7px solid #fff !important;
   }
 
-  body:has(.work-list:nth-child(3):hover) .top-nav {
-    background-color: #6a71e8 !important;
-  }
-
+  //bethfin hover anim
   body:has(.work-list:nth-child(4):hover) {
     background-color: #c5e2f4;
   }
@@ -159,4 +160,30 @@ h4 {
   body:has(.work-list:nth-child(4):hover) .top-nav {
     background-color: #c5e2f4 !important;
   }
-}
+
+  //saph hover anim
+  body:has(.work-list:nth-child(5):hover) {
+    background-color: #6a71e8;
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(5):hover) small span:after {
+    background-color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(5):hover) .header-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(5):hover) .footer-text {
+    color: #fff !important;
+  }
+
+  body:has(.work-list:nth-child(5):hover) hr {
+    border-top: 0.7px solid #fff !important;
+  }
+
+  body:has(.work-list:nth-child(5):hover) .top-nav {
+    background-color: #6a71e8 !important;
+  }
+} */

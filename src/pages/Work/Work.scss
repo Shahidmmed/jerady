@@ -99,8 +99,9 @@ span.gray-overlay {
   object-fit: contain;
   max-width: 60%;
 }
-.image-block {
-  background-color: #eeee;
+.tasks {
+  list-style: auto;
+  margin-left: -15px;
 }
 .next-cards {
   position: relative;
@@ -117,7 +118,7 @@ span.gray-overlay {
   }
   .previewText {
     position: absolute !important;
-    background-color: #ffffff4d;
+    background-color: transparent;
     padding-left: 10px;
     left: 5%;
     height: 70px;

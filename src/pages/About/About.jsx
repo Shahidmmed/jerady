@@ -28,11 +28,11 @@ const About = () => {
         >
           <h1 className="header-text">About Me</h1>
           <p className="about-text">
-            I am an Experience Designer with a <b>Graphic Design</b>,
-            <b> Research</b> and <b>Creative Writing</b> background who tries
-            not to take herself too seriously. When I'm not contributing to
-            solving business and user problems, I'm sometimes spotted in a cozy
-            studio making music, reading, writing or playing word games.
+            I am an Experience Designer with a Graphic Design, Research and
+            Creative Writing background who tries not to take herself too
+            seriously. When I'm not contributing to solving business and user
+            problems, I'm sometimes spotted in a cozy studio making music,
+            reading, writing or playing word games.
           </p>
         </div>
       </div>

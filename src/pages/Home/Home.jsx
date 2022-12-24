@@ -21,8 +21,8 @@ const Home = () => {
           <h1 className="header-text">Design Rocks My World</h1>
           <p className="summary">
             and I am particularly obsessed with and experienced in crafting
-            useful, delightful and impactful experiences that align with
-            business success by bridging the gap between people and products.
+            beautiful, delightful and impactful products that people love and
+            also align with business success.
           </p>
         </div>
       </div>

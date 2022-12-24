@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./index.css";
+import "./index.scss";
 import "uikit/dist/css/uikit.min.css";
 import Icons from "uikit/dist/js/uikit-icons.min.js";
 import UIkit from "uikit";

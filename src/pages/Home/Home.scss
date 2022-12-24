@@ -15,6 +15,9 @@ small {
   li:nth-child(3) {
     margin-top: -10px !important;
   }
+  li:nth-child(5) {
+    margin-top: -10px !important;
+  }
   li:nth-child(4) {
     margin-top: 35px !important;
   }
@@ -35,11 +38,10 @@ small {
   }
   .previewText {
     position: absolute;
-    background-color: #ffffff4d;
+    background-color: transparent;
     padding: 10px;
     left: 5%;
     height: 70px;
-    border-radius: 10px;
     width: 310px;
     bottom: 10%;
     color: black;

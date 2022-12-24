@@ -19,6 +19,7 @@ import { selectedProjects } from "../../data/info";
 import { NavLink } from "react-router-dom";
 import { getImgUrl, scrollToSection } from "../../data/functions";
 import { useRef } from "react";
+import NextProjects from "../../components/NextProjects/NextProjects";
 
 const Bethniel = () => {
   const overview = useRef(null);
@@ -94,11 +95,11 @@ const Bethniel = () => {
             <p>
               Tools: Figma, Protopie, Airtable, Adobe Illustrator, Miro, iPad
             </p>
-            <p>
+            <div>
               <p className="uk-margin-remove">Team: AJ Mensah- UX Lead</p>
               <p className="uk-margin-remove">Isaac Nkansah- Developer</p>
               <p className="uk-margin-remove">Bright Sunu- Developer</p>
-            </p>
+            </div>
             <p>Timeline: 03/10/2022-7/11/2022</p>
           </div>
         </div>
@@ -133,7 +134,7 @@ const Bethniel = () => {
             bounce rates and conversion rates are quite low.
           </p>
         </div>
-        <div className="uk-padding  uk-padding-remove-bottom">
+        <div className="uk-padding">
           <h2 className="header-text">A Facelift</h2>
           <p>
             My starting point in the project was to familiarize with and
@@ -145,8 +146,19 @@ const Bethniel = () => {
             How might we redesign the Bethniel Mobile app to make it intuitive,
             user-friendly and seamless for new and existing users?
           </h4>
+          <div className="uk-padding uk-padding-remove-horizontal">
+            <h4>Main Tasks</h4>
+            <ul className="tasks">
+              <li>Customers Insights & Ideation</li>
+              <li>Building the Project Vision</li>
+              <li>Planning and scope definition</li>
+              <li>Research and Interviews</li>
+              <li>Design Execution and validation</li>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div className="uk-section uk-padding-remove-top uk-container">
         <div className="uk-padding uk-padding-remove-top">
           <div className="study-image" data-uk-lightbox="animation: fade">
@@ -311,11 +323,15 @@ const Bethniel = () => {
       </div>
       <div className="uk-section uk-container uk-padding-small">
         <div className="uk-padding uk-margin-bottom">
-          Rather than just improving features as they are on the mobile app, I
-          saw an opportunity to improve the overall user experience of the app.
-          The current mobile app had no onboarding flow to ease in new users,
-          among a myriad of missing performance boosters. I worked on
-          integrating the following:
+          The new home page is sleek and easy to navigate. The layout is clean
+          and uncluttered, with large, high-quality images and clear, concise
+          text. The main menu is located at the bottom of the page, allowing
+          users to easily access all of the app's features and functions. The
+          prominent features have been given visual prominence, making it easy
+          for users to find. The design also includes a prominent search bar,
+          making it easy for users to find what they're looking for. The design
+          is user-friendly and visually appealing, making it a great first
+          impression for new users and a convenient hub for returning users.
         </div>
       </div>
       <div className="uk-section uk-container uk-padding-small" ref={ideation}>
@@ -513,39 +529,7 @@ const Bethniel = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-container uk-padding-xlarge-bottom next-section">
-        <div className="uk-margin-large uk-padding">
-          <h2 className="header-text nxt-header uk-margin-left">
-            Next Project
-          </h2>
-          <div className="next-cards">
-            <ul className="uk-child-width-1-2@s" data-uk-grid>
-              {nextprojects.map((project, index) => (
-                <li key={index} className="">
-                  <NavLink to={project.page}>
-                    <div
-                      className="uk-card uk-card-default next-card"
-                      style={{
-                        backgroundImage: `${getImgUrl(project.image)}`,
-                      }}
-                    >
-                      <img src={getImgUrl(project.image)} alt="" />
-
-                      <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
-                        {project.previewText}
-                        <span
-                          data-uk-icon="chevron-double-right"
-                          className="uk-position-bottom-right uk-padding-small"
-                        ></span>
-                      </div>
-                    </div>
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+      <NextProjects nextprojects={nextprojects} />
     </div>
   );
 };

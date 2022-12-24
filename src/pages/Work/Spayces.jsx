@@ -19,6 +19,7 @@ import "./Work.scss";
 import { selectedProjects } from "../../data/info";
 import { getImgUrl, scrollToSection } from "../../data/functions";
 import { NavLink } from "react-router-dom";
+import NextProjects from "../../components/NextProjects/NextProjects";
 
 const Spayces = () => {
   const overview = useRef(null);
@@ -26,7 +27,7 @@ const Spayces = () => {
   const ideation = useRef(null);
   const designs = useRef(null);
   const thoughts = useRef(null);
-  let nextprojects = selectedProjects.slice(2);
+  let nextprojects = selectedProjects.slice(2, 4);
 
   return (
     <div>
@@ -127,7 +128,7 @@ const Spayces = () => {
           </div>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-vertical image-block">
+      <div className="uk-section-large uk-padding-remove-vertical">
         <div className=" uk-margin-large uk-padding-large">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame1}>
@@ -162,7 +163,7 @@ const Spayces = () => {
           </p>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-vertical image-block">
+      <div className="uk-section-large uk-padding-remove-vertical">
         <div className=" uk-margin-large uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame2}>
@@ -210,7 +211,7 @@ const Spayces = () => {
           </h4>
         </div>
       </div>
-      <div className="uk-section-large uk-padding-remove-vertical image-block">
+      <div className="uk-section-large uk-padding-remove-vertical">
         <div className="uk-margin uk-padding">
           <div className="study-image" data-uk-lightbox="animation: fade">
             <a href={frame3}>
@@ -565,48 +566,27 @@ const Spayces = () => {
       >
         <div className="uk-margin-large uk-padding">
           <h2 className="header-text">Final Thoughts</h2>
-          <p>
-            The Feedback that came to us from the test opened our eyes to see
-            that our solution was great but had a few setbacks. I created an
-            affinity Diagram to sort qualitative user pain points into common
-            themes to make it easier for me to focus on what priority changes
-            were to be made.
+          <p className="uk-margin-remove">
+            After conducting usability testing on the mobile app, it was clear
+            that the app has several strengths, including a user-friendly
+            interface and efficient navigation. However, there are also some
+            areas for improvement, such as the need for inclusion of additional
+            features to enhance the user experience. Overall, the app shows
+            potential, but further testing and development is necessary to
+            ensure its success in the market once this product is brought to
+            life.
+          </p>
+          <p className="uk-margin-remove">
+            This was a challenging but fun project to work on. The only issue we
+            faced was the tight schedule we worked on, which resulted in some
+            key features in the product roadmap not making the V1. Regardless,
+            the project turned out quite good and my collaboration skills were
+            enhanced.
           </p>
         </div>
       </div>
-      <div className="uk-section uk-container uk-padding-xlarge-bottom next-section">
-        <div className="uk-margin-large uk-padding">
-          <h2 className="header-text nxt-header uk-margin-left">
-            Next Project
-          </h2>
-          <div className="next-cards">
-            <ul className="uk-child-width-1-2@s" data-uk-grid>
-              {nextprojects.map((project, index) => (
-                <li key={index} className="">
-                  <NavLink to={project.page}>
-                    <div
-                      className="uk-card uk-card-default next-card"
-                      style={{
-                        backgroundImage: `${getImgUrl(project.image)}`,
-                      }}
-                    >
-                      <img src={getImgUrl(project.image)} alt="" />
 
-                      <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
-                        {project.previewText}
-                        <span
-                          data-uk-icon="chevron-double-right"
-                          className="uk-position-bottom-right uk-padding-small"
-                        ></span>
-                      </div>
-                    </div>
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+      <NextProjects nextprojects={nextprojects} />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Bethniel from "./pages/Work/Bethniel";
 import BethnielFinance from "./pages/Work/BethnielFinance";
 import Sapphire from "./pages/Work/Sapphire";
 import Spayces from "./pages/Work/Spayces";
+import Yamas from "./pages/Work/Yamas";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/casestudy/spayces" element={<Spayces />} />
           <Route path="/casestudy/bethniel" element={<Bethniel />} />
+          <Route path="/casestudy/yamas" element={<Yamas />} />
           <Route path="/casestudy/bethnielfin" element={<BethnielFinance />} />
           <Route path="/casestudy/sapphire" element={<Sapphire />} />
           <Route path="/uncut" element={<Uncut />} />
