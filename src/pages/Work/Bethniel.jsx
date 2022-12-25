@@ -35,9 +35,9 @@ const Bethniel = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
-          <h1 className="blue-header study-header uk-margin-remove">
+          <h2 className="blue-header study-header uk-margin-remove">
             Rethinking User Experience of Personal Finance
-          </h1>
+          </h2>
           <p className="study-brief uk-margin-top">
             Bethniel Finance is an app that helps young people improve their
             financial literacy, manage personal finances, and access financial

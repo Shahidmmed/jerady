@@ -18,12 +18,11 @@ const Home = () => {
       >
         <div className="uk-margin-large uk-padding">
           <h4 className="header-text">Hi 👋🏽 I'm AJ,</h4>
-          <h1 className="header-text">Design Rocks My World</h1>
-          <p className="summary">
-            and I am particularly obsessed with and experienced in crafting
-            beautiful, delightful and impactful products that people love and
-            also align with business success.
-          </p>
+          <p className="summary">and I am experienced in</p>
+          <h1 className="header-text summary">
+            Elevating the digital experience through clever design solutions and
+            a dash of wit and whimsy.
+          </h1>
         </div>
       </div>
       <div
@@ -35,7 +34,9 @@ const Home = () => {
             className=" uk-margin-large"
             data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500"
           >
-            <h2 className="header-text uk-margin-remove">Selected Projects</h2>
+            <h2 className="header-text uk-margin-remove proj">
+              Selected Projects
+            </h2>
             <small>
               I’VE WORKED ON<span></span>
             </small>
@@ -68,7 +69,10 @@ const Home = () => {
                       >
                         <img src={getImgUrl(project.image)} alt="" />
 
-                        <div className="uk-card uk-card-default previewText">
+                        <div
+                          className="uk-card uk-card-default previewText"
+                          style={{ color: `${project.previewColor}` }}
+                        >
                           {project.previewText}
                           <span
                             data-uk-icon="chevron-double-right"

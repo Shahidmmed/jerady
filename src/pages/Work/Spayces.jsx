@@ -34,9 +34,9 @@ const Spayces = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">SPAYCES</h5>
-          <h1 className="study-header orange-header uk-margin-remove">
+          <h2 className="study-header orange-header uk-margin-remove">
             Reimagining the Restaurant Reservation Experience
-          </h1>
+          </h2>
           <p className="study-brief">
             Spayces is a Table Reservation App that provides reliable and
             accurate restaurant information (personalized menus, prices,

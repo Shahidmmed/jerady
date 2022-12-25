@@ -17,12 +17,13 @@ b {
     margin-left: 70px;
   }
 }
-.img-txt {
-  display: flex;
-  align-items: center;
-  margin-bottom: 340px !important;
+.txt-container {
   font-size: 64px;
   margin-left: -80px !important;
+}
+.img-txt {
+  width: 390px;
+  line-height: 102px;
 }
 .about-header {
   max-width: 635px;

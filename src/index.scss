@@ -48,7 +48,7 @@ a:hover {
 }
 
 .header-text {
-  font-family: Cabin-Bold !important;
+  font-family: Cabin-SemiBold !important;
   color: #040404;
 }
 
@@ -60,10 +60,6 @@ a:hover {
 
 .header-text {
   color: #040404 !important;
-}
-
-h2 {
-  font-size: 2.1875rem !important;
 }
 
 .top-btn-position {
@@ -90,7 +86,14 @@ h2 {
   border: 2px solid #fff;
 }
 
-/* @media (min-width: 720px) {
+@media (min-width: 720px) {
+  h1 {
+    font-size: 3.625rem !important;
+  }
+
+  h2 {
+    font-size: 2.1875rem !important;
+  } /*
   //beth hover anim
   body:has(.work-list:nth-child(1):hover) {
     background-color: #f5f0eb;
@@ -185,5 +188,5 @@ h2 {
 
   body:has(.work-list:nth-child(5):hover) .top-nav {
     background-color: #6a71e8 !important;
-  }
-} */
+  }*/
+}

@@ -18,9 +18,9 @@ const Sapphire = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">SAPPHIRE</h5>
-          <h1 className="purple-header study-header uk-margin-remove">
+          <h2 className="purple-header study-header uk-margin-remove">
             Powering the Modern Fuel Supply Experience
-          </h1>
+          </h2>
           <p className="study-brief uk-margin-top">
             Sapphire is a fuel supply management dashboard that allows
             individual and corporate fuel suppliers to track orders, deliveries,

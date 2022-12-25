@@ -20,7 +20,10 @@ const NextProjects = ({ nextprojects }) => {
                   >
                     <img src={getImgUrl(project.image)} alt="" />
 
-                    <div className="uk-card uk-card-default uk-flex uk-flex-middle previewText">
+                    <div
+                      className="uk-card uk-card-default uk-flex uk-flex-middle previewText"
+                      style={{ color: `${project.previewColor}` }}
+                    >
                       {project.previewText}
                       <span
                         data-uk-icon="chevron-double-right"

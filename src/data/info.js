@@ -37,7 +37,8 @@ export const music = [
 export const selectedProjects = [
   {
     name: "Bethniel Finance",
-    previewText: "Shaping and improving the future of personal finance",
+    previewText: "Rethinking User Experience of Personal Finance",
+    previewColor: "#171717",
     image: "home/bethniel.png",
     page: "/casestudy/bethniel",
     type: "UI/UX Design",
@@ -45,6 +46,7 @@ export const selectedProjects = [
   {
     name: "Spayces",
     previewText: "Reimagining the Restaurant Reservation Experience",
+    previewColor: "white",
     image: "home/spayces.png",
     page: "/casestudy/spayces",
     type: "UI/UX Design",
@@ -52,6 +54,7 @@ export const selectedProjects = [
   {
     name: "Yamas",
     previewText: "Pushing the Frontiers of HealthCare Technology",
+    previewColor: "white",
     image: "home/yamas.png",
     page: "/casestudy/yamas",
     type: "UI/UX Design",
@@ -59,6 +62,7 @@ export const selectedProjects = [
   {
     name: "Bethniel Finance",
     previewText: "Designing a dashboard for personal finance experts",
+    previewColor: "#0E0E0E",
     image: "home/bethnielfin.png",
     page: "/casestudy/bethnielfin",
     type: "UI/UX Design",
@@ -66,6 +70,7 @@ export const selectedProjects = [
   {
     name: "Sapphire",
     previewText: "Powering the Modern Fuel Supply Experience",
+    previewColor: "#000000",
     image: "home/sapphire.png",
     page: "/casestudy/sapphire",
     type: "UI/UX Design",

@@ -20,9 +20,9 @@ const BethnielFinance = () => {
       <div className="uk-section-large uk-container uk-padding-remove-bottom">
         <div className=" uk-margin-large uk-padding">
           <h5 className="study-name uk-margin-remove">BETHNIEL FINANCE</h5>
-          <h1 className="blue-header study-header uk-margin-remove">
+          <h2 className="blue-header study-header uk-margin-remove">
             Designing a dashboard for finance experts
-          </h1>
+          </h2>
           <p className="study-brief uk-margin-top">
             Spayces is a Table Reservation App that provides reliable and
             accurate restaurant information (personalized menus, prices,

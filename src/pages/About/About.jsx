@@ -53,12 +53,14 @@ const About = () => {
                 data-uk-scrollspy="cls: uk-animation-fade; delay: 500"
               />
             </div>
-            <h1
-              className="header-text img-txt"
-              data-uk-scrollspy="cls: uk-animation-slide-right; delay: 500"
-            >
-              Young, Curious and Enthusiatic
-            </h1>
+            <div className="txt-container">
+              <h1
+                className="header-text img-txt"
+                data-uk-scrollspy="cls: uk-animation-slide-right; delay: 500"
+              >
+                Young, Curious and Enthusiatic
+              </h1>
+            </div>
           </div>
         </div>
       </div>
