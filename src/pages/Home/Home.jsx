@@ -64,7 +64,7 @@ const Home = () => {
                             : "uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle work-card"
                         }
                         style={{
-                          backgroundImage: `${getImgUrl(project.image)}`,
+                          background: `${getImgUrl(project.image)}`,
                         }}
                       >
                         <img src={getImgUrl(project.image)} alt="" />

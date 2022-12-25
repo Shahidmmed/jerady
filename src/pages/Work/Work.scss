@@ -44,6 +44,30 @@ span.gray-overlay {
 .grey-text {
   color: #8d8d8d;
 }
+.sticky-column {
+  height: 80vh;
+  position: sticky;
+  display: flex;
+  width: 30% !important;
+}
+.column-tab {
+  flex-direction: column;
+  margin-right: 0px !important;
+  li {
+    padding-bottom: 25px;
+  }
+}
+.column-tab::before {
+  content: none !important;
+}
+.split {
+  .uk-sticky-placeholder {
+    width: 45%;
+  }
+  .uk-tab {
+    margin-right: 0px !important;
+  }
+}
 .uk-tab {
   justify-content: space-between;
   padding-left: 80px !important;

@@ -40,7 +40,7 @@ export const selectedProjects = [
     previewText: "Rethinking User Experience of Personal Finance",
     previewColor: "#171717",
     image: "home/bethniel.png",
-    page: "/casestudy/bethniel",
+    //page: "/casestudy/bethniel",
     type: "UI/UX Design",
   },
   {
@@ -64,7 +64,7 @@ export const selectedProjects = [
     previewText: "Designing a dashboard for personal finance experts",
     previewColor: "#0E0E0E",
     image: "home/bethnielfin.png",
-    page: "/casestudy/bethnielfin",
+    //page: "/casestudy/bethnielfin",
     type: "UI/UX Design",
   },
   {
@@ -72,7 +72,7 @@ export const selectedProjects = [
     previewText: "Powering the Modern Fuel Supply Experience",
     previewColor: "#000000",
     image: "home/sapphire.png",
-    page: "/casestudy/sapphire",
+    //page: "/casestudy/sapphire",
     type: "UI/UX Design",
   },
 ];
